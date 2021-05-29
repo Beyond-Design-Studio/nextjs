@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import styles from "../styles/anim.module.css";
+import miscstyles from "../styles/misc.module.css";
 
 
 const NavButton = ({ classes }) => {
@@ -24,9 +26,9 @@ const NavButton = ({ classes }) => {
 }
 
 
-const Line = ({number}) => {
+const Line = ({ number }) => {
   return (
-    <div className="text-sm font-light font-prompt font-semibold text-secondary-color flex items-center gap-3">
+    <div className="text-sm font-prompt font-semibold text-secondary-color flex items-center gap-3">
       <div className="flex h-0.5 w-full bg-accent-color" />
       <div>{number}</div>
       <div className="flex h-0.5 w-full bg-accent-color" />
@@ -38,8 +40,8 @@ const Line = ({number}) => {
 const Nav = ({ nav, toggleNav }) => {
 
   return (
-    <div 
-      className={`transition ease-in duration-200 transform
+    <div
+      className={`transition ease-in duration-300 transform
         ${nav ? "translate-x-0" : "translate-x-full"}
         bg-primary-color w-full h-full fixed top-0
         flex flex-col
@@ -54,26 +56,41 @@ const Nav = ({ nav, toggleNav }) => {
 
         </button>
       </div>
-      
+
       <ul className="text-font-color font-prompt text-6xl font-semibold flex flex-col items-center justify-center h-full">
-        
+
         <div className="pb-7">
-          <li className="mb-7 px-28">Home</li>
+          <li 
+            className={`mb-7 px-28 ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}
+          >Home</li>
           <Line number={"01"} />
         </div>
-        
+
         <div className="pb-7">
-          <li className="mb-7 px-52">About</li>
+          <li 
+            className={`mb-7 px-52 ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}
+          >About</li>
           <Line number={"02"} />
         </div>
-        
+
         <div className="pb-7">
-          <li className="mb-7 px-52">Gallery</li>
+          <li 
+            className={`mb-7 px-52 ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}>Gallery</li>
           <Line number={"03"} />
         </div>
-        
+
         <div className="pb-7">
-          <li className="mb-7 px-28">Contact</li>
+          <li
+            className={`mb-7 px-28 ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}
+          >Contact</li>
           <Line number={"04"} />
         </div>
       </ul>
