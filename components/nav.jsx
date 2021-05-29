@@ -6,7 +6,7 @@ import miscstyles from "../styles/misc.module.css";
 
 const NavButton = ({ classes }) => {
 
-  const [nav, toggleNav] = useState(true);
+  const [nav, toggleNav] = useState(false);
 
   return (
     <>
