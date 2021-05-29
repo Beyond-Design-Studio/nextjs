@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-import Nav from "../components/nav";
+import NavButton from "../components/nav";
 import styles from "../styles/anim.module.css";
 
 export default function Home() {
-  const [nav, toggleNav] = useState(false);
-
   return (
     <div className="w-full h-screen flex flex-col">
       <Head>
@@ -15,13 +13,7 @@ export default function Home() {
       </Head>
       
       <div className="p-20 pt-28 flex justify-end">
-        <button className="text-secondary-color" onClick={() => toggleNav(true)}>
-          <svg className={`fill-current ${styles.ham}`} width="50" height="15" viewBox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
-            <rect className={styles.lineone} width="50" height="4" />
-            <rect className={styles.linetwo} width="25" height="4" x="25" y="11" />
-          </svg>
-
-        </button>
+        <NavButton />
       </div>
       
       <div className="flex items-center h-1/2 justify-center">
@@ -49,8 +41,6 @@ export default function Home() {
           <path className={styles.lowerPath} d="M2 20 L33 44 L64 20" stroke="#F3F3F3" strokeWidth="4" />
         </svg>
       </div>
-
-      {nav && <Nav toggleNav={toggleNav} />}
     </div>
   );
 }
