@@ -1,0 +1,48 @@
+.ham .lineone {
+  transition: all ease-in 0.15s;
+  width: 50px;
+  x: 0;
+}
+
+.ham .linetwo {
+  transition: all ease-in 0.15s;
+  width: 25px;
+  x: 25px;
+}
+
+.ham:hover .lineone {
+  transition: all ease-in 0.15s;
+  width: 25px;
+  x: 25px;
+}
+
+.ham:hover .linetwo {
+  transition: all ease-in 0.15s;
+  width: 50px;
+  x: 0;
+}
+
+.hiddenPath,
+.upperPath,
+.lowerPath {
+  transition: all ease 0.35s;
+}
+
+.hiddenPath {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.arrow:hover .lowerPath {
+  transform: translateY(65%);
+  opacity: 0;
+}
+
+.arrow:hover .upperPath {
+  transform: translateY(40%);
+}
+
+.arrow:hover .hiddenPath {
+  transform: translateY(0);
+  opacity: 1;
+}

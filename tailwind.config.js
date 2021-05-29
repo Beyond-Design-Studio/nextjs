@@ -1,11 +1,24 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
+
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        "bg-img": "url('../public/bg.png')",
+      }),
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+        "font-color": "var(--font-color)",
+        "accent-color": "var(--accent-color)",
+      },
+    },
   },
+
   variants: {
     extend: {},
   },
+
   plugins: [],
-}
+};
