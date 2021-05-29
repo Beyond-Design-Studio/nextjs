@@ -1,10 +1,10 @@
-.ham .lineone {
+.lineone {
   transition: all ease-in 0.15s;
   width: 50px;
   x: 0;
 }
 
-.ham .linetwo {
+.linetwo {
   transition: all ease-in 0.15s;
   width: 25px;
   x: 25px;
