@@ -9,7 +9,7 @@ module.exports = {
       }),
       colors: {
         "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)",
+        // "secondary-color": "var(--secondary-color)",
         "font-color": "var(--font-color)",
         "accent-color": "var(--accent-color)",
       },

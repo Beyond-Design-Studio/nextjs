@@ -11,7 +11,7 @@ const NavButton = ({ classes }) => {
   return (
     <>
       <div className={`${classes}`}>
-        <button className="text-secondary-color" onClick={() => toggleNav(true)}>
+        <button className="text-accent-color" onClick={() => toggleNav(true)}>
           <svg className={`fill-current ${styles.ham}`} width="50" height="15" viewBox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.lineone} width="50" height="4" />
             <rect className={styles.linetwo} width="25" height="4" x="25" y="11" />
@@ -28,7 +28,7 @@ const NavButton = ({ classes }) => {
 
 const Line = ({ number }) => {
   return (
-    <div className="text-sm font-prompt font-semibold text-secondary-color flex items-center gap-3">
+    <div className="text-sm font-prompt font-semibold text-accent-color flex items-center gap-3">
       <div className="flex h-0.5 w-full bg-accent-color" />
       <div>{number}</div>
       <div className="flex h-0.5 w-full bg-accent-color" />
