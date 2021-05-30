@@ -44,7 +44,7 @@ const Nav = ({ nav, toggleNav }) => {
       className={`transition ease-in duration-300 transform
         ${nav ? "translate-x-0" : "translate-x-full"}
         bg-primary-color w-full h-full fixed top-0
-        flex flex-col
+        flex flex-col z-10
       `}
     >
       <div className="w-full flex justify-end pt-16 pb-2 pr-20">

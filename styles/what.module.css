@@ -5,7 +5,17 @@
 .content {
   transition: opacity ease var(--anim-delay);
   opacity: 0;
-  width: 20rem;
+  width: 40rem;
+}
+
+.design {
+  transition: all ease var(--anim-delay);
+  opacity: 1;
+}
+
+.beyond {
+  transition: all ease var(--anim-delay);
+  opacity: 1;
 }
 
 .white-line {
@@ -35,10 +45,21 @@
   opacity: 0;
 }
 
+.container:hover .design {
+  transition: all ease var(--anim-delay);
+  /* transform: translateY(-8rem); */
+  opacity: 0;
+}
+
+.container:hover .beyond {
+  transition: all ease var(--anim-delay);
+  /* transform: translateY(8rem); */
+  opacity: 0;
+}
+
 .container:hover .content {
   transition: opacity ease var(--anim-delay);
   opacity: 1;
-  display: block;
 }
 
 .container:hover .title-1 {

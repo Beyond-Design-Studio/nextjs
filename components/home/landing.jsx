@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../styles/anim.module.css";
+import styles from "../../styles/anim.module.css";
 
 
 const Landing = () => {
