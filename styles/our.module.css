@@ -25,7 +25,7 @@
 
 .white-line {
   transition: all ease var(--anim-delay);
-  transform: translateX(18rem);
+  transform: translate(18rem, 1rem);
   opacity: 1;
 }
 
@@ -36,7 +36,7 @@
 
 .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(17rem);
+  transform: translate(17rem, 1rem);
 }
 
 .button svg {
@@ -64,7 +64,7 @@
 
 .container:hover .white-line {
   transition: all ease var(--anim-delay);
-  transform: translateX(32rem);
+  transform: translate(32rem, 1rem);
   opacity: 0;
 }
 

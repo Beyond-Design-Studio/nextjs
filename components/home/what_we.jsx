@@ -44,7 +44,7 @@ const WhatWeDo = ({ content }) => {
             </div>
           </div>
 
-          <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl`}>
+          <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl transform translate-x-32`}>
             <p>BEYOND</p>
             <p>YOUR</p>
             <p>IMAGINATION</p>

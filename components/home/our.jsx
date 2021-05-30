@@ -8,7 +8,7 @@ const Our = ({second, content, re, link}) => {
   return (
     <div className="w-full h-screen flex-shrink-0 block">
       <div className="flex h-full items-center justify-center font-prompt">
-        <div className={`flex flex-col pl-96`}>
+        <div className={`flex flex-col pl-96 pt-12`}>
           <div className={`${styles.design} leading-7 font-robotoc text-accent-color font-semibold text-2xl transform translate-x-96 pb-4`}>
             <p>DESIGN</p>
             <p>THE</p>
@@ -42,7 +42,7 @@ const Our = ({second, content, re, link}) => {
             </div>
           </div>
 
-          <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl`}>
+          <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl transform translate-x-36`}>
             <p>BEYOND</p>
             <p>YOUR</p>
             <p>IMAGINATION</p>
