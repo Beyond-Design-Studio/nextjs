@@ -17,15 +17,21 @@ export default function Home() {
 
       <Landing />
       
-      <WhatWeDo />
+      <WhatWeDo 
+        content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
+      />
 
       <Our 
         second={"Team"}
+        re={"Team"}
+        link={"/"}
         content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
       />
 
       <Our
         second={"Work"}
+        re={"Projects"}
+        link={"/"}
         content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
       />
 

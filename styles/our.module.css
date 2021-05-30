@@ -35,6 +35,29 @@
   transform: translateX(13rem);
 }
 
+.button svg {
+  transition: all ease var(--anim-delay);
+  opacity: 1;
+}
+
+.button p {
+  transform: translateX(4rem);
+  transition: all ease var(--anim-delay);
+  opacity: 0;
+}
+
+.button:hover svg {
+  transform: translateX(-4rem);
+  opacity: 0;
+  transition: all ease var(--anim-delay);
+}
+
+.button:hover p {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all ease var(--anim-delay);
+}
+
 .container:hover .white-line {
   transition: all ease var(--anim-delay);
   transform: translateX(32rem);
