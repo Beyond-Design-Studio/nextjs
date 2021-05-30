@@ -1,13 +1,23 @@
-import React from "react";
-import Head from "next/head";
+import React, { useState } from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
+import Head from 'next/head'
 
-import Landing from "../components/home/landing";
-import WhatWeDo from "../components/home/what_we";
-import Our from "../components/home/our";
-import Clientele from "../components/home/clientele";
-import Create from "../components/home/create";
+import HomeData from '../constants/HomeData'
 
-export default function Home() {
+
+/*
+  * All the component imports are stored in /constants/HomeData.jsx
+  * Using all those components to initialize fullpages 
+  * then mapping those pages inside the fullpage wrapper
+*/
+
+const App = () => {
+  const [fullpages, setFullpage] = useState(HomeData);
+
+  const onLeave = (origin, destination, direction) => {
+    console.log("onLeave", { origin, destination, direction });
+  }
+
   return (
     <div className="flex flex-col">
       {/* SEO */}
@@ -15,47 +25,23 @@ export default function Home() {
         <title>Beyond Design Studio</title>
       </Head>
 
-      <Landing />
-      
-      <WhatWeDo 
-        content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
-      />
-
-      <Our 
-        second={"Team"}
-        re={"Team"}
-        link={"/"}
-        content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
-      />
-
-      <Our
-        second={"Work"}
-        re={"Projects"}
-        link={"/"}
-        content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
-      />
-
-      <Clientele 
-        clients={
-          [
-            {
-              key: "ebola",
-              img: "/ebola.png"
-            },
-            {
-              key: "radio",
-              img: "/radio.png"
-            },
-            {
-              key: "yugma",
-              img: "/yugma.png"
-            },
-          ]
+      <ReactFullpage
+        navigation
+        onLeave={onLeave}
+        render={comp =>
+          console.log("render prop change") || (
+            <ReactFullpage.Wrapper>
+              {fullpages.map(({ text, component }) => (
+                <div key={text} className="section">
+                  {component}
+                </div>
+              ))}
+            </ReactFullpage.Wrapper>
+          )
         }
       />
-
-      <Create />
-
     </div>
   );
 }
+
+export default App;

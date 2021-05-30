@@ -3,11 +3,10 @@ import React from "react";
 import styles from "../../styles/anim.module.css";
 
 
-const Landing = () => {
-
+const Landing = ({ moveSectionDown }) => {
   return (
     <div className="w-full h-screen">
-      <div className="flex items-center justify-center flex-shrink-0" style={{height: "90%"}}>
+      <div className="flex items-center justify-center flex-shrink-0" style={{ height: "90%" }}>
         <div className="flex justify-evenly items-center w-full ">
           <div>
             <img src="/logo.png" height="300" width="261" alt="Beyond Logo" />
@@ -19,7 +18,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center" onClick={moveSectionDown}>
         <svg className={`${styles.arrow} self-center justify-self-center`} width="66" height="48" viewBox="0 0 66 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path className={styles.hiddenPath} d="M2 2 L33 26 L64 2" stroke="#F3F3F3" strokeWidth="4" />
           <path className={styles.upperPath} d="M2 2 L33 26 L64 2" stroke="#F3F3F3" strokeWidth="4" />
