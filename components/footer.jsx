@@ -12,7 +12,7 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div style={{ backgroundColor: "#E6E6E6"}} className="py-8 px-8 w-full h-3/5 flex">
+      <div style={{ backgroundColor: "#E6E6E6"}} className="py-8 px-8 w-full h-3/5 flex z-10">
         <div className="font-prompt font-light flex flex-col justify-around flex-shrink-0 w-1/2 border-black border-r-2">
           <h2 className="text-5xl text-accent-color">Let's Talk</h2>
           
