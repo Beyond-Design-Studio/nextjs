@@ -16,10 +16,10 @@ const Footer = ({ moveSection }) => {
         <div className="font-prompt font-light flex flex-col justify-around flex-shrink-0 w-1/2 border-black border-r-2">
           <h2 className="text-5xl text-accent-color">Let's Talk</h2>
           
-          <p className="text-4xl">
-            beyonddesignstudio@gmail.com <br />
-            8217393998, 9176645022
-          </p>
+          <div className="text-4xl">
+            <p>beyonddesignstudio@gmail.com</p>
+            <p className="text-3xl">8217393998, 9176645022</p>
+          </div>
 
           <p className="text-4xl">
             Home <br />
@@ -29,10 +29,10 @@ const Footer = ({ moveSection }) => {
           </p>
         </div>
 
-        <div className="flex flex-col items-end flex-shrink-0 w-1/2">
+        <div className="flex flex-col items-end justify-around flex-shrink-0 w-1/2">
           <img src="/logo.png" height="125" width="143" alt="Beyond Logo" />
           
-          <p className="text-4xl font-prompt font-light pt-4">
+          <p className="text-3xl text-right font-prompt font-light pt-4">
             Virugambakkam <br />
             Chennai- 600092
           </p>

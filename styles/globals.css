@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #141618;
+  --primary-color: #000;
   /* --secondary-color: #fe0000; */
   --font-color: #FCFCFC;
   --accent-color: #fe0000;

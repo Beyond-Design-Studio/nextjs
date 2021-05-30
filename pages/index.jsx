@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Head from 'next/head'
 
-import HomeData from '../constants/HomeData'
+import HomeData from '../constants/homedata'
 
 
 /*
