@@ -10,7 +10,7 @@ const NavButton = ({ classes }) => {
 
   return (
     <>
-      <div className={`${classes}`}>
+      <div className={`${classes} z-10`}>
         <button className="text-accent-color" onClick={() => toggleNav(true)}>
           <svg className={`fill-current ${styles.ham}`} width="50" height="15" viewBox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.lineone} width="50" height="4" />
@@ -19,7 +19,7 @@ const NavButton = ({ classes }) => {
         </button>
 
       </div>
-      {/* {nav && } */}
+
       <Nav nav={nav} toggleNav={toggleNav} />
     </>
   )
@@ -44,7 +44,7 @@ const Nav = ({ nav, toggleNav }) => {
       className={`transition ease-in duration-300 transform
         ${nav ? "translate-x-0" : "translate-x-full"}
         bg-primary-color w-full h-full fixed top-0
-        flex flex-col z-10
+        flex flex-col z-20
       `}
     >
       <div className="w-full flex justify-end pt-16 pb-2 pr-20">
