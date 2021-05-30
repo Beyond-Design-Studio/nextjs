@@ -1,5 +1,5 @@
 .container {
-  --anim-delay: 0.7s
+  --anim-delay: 0.9s
 }
 
 .button {
@@ -68,7 +68,7 @@
   opacity: 0;
 }
 
-.container:hover .design {
+.container:hover ~ .design {
   transition: all ease var(--anim-delay);
   /* transform: translateY(-8rem); */
   opacity: 0;
