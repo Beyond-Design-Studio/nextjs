@@ -1,8 +1,10 @@
 import React from "react";
+import Link from "next/link";
+
 import styles from "../../styles/what.module.css"
 
 
-const WhatWeDo = ({}) => {
+const WhatWeDo = ({ content }) => {
   return (
     <div className="w-full h-screen flex-shrink-0 block">
       <div className="flex h-full items-center justify-center font-prompt">
@@ -27,7 +29,17 @@ const WhatWeDo = ({}) => {
                 <div className={`${styles["white-line"]} bg-font-color h-2 w-52 mb-4`}></div>
               </div>
             </div>
-            <div className={`${styles["content"]} font-prompt text-font-color font-light text-2xl`}>We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant.</div>
+            <div className={`${styles["content"]} flex flex-col font-prompt text-font-color font-light text-2xl`}>
+              {content}
+              <Link href="/">
+                <button className={`flex self-center items-center ${styles["button"]}`}>
+                  <svg width="45" height="45" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z" fill="white" />
+                  </svg>
+                  <p>Services</p>
+                </button>
+              </Link>
+            </div>
           </div>
 
           <div className={`${styles.beyond} text-font-color font-semibold text-2xl`}>
