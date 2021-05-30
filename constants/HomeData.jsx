@@ -8,8 +8,12 @@ import Create from "../components/home/create";
 import Footer from "../components/footer";
 
 const moveSectionDown = () => {
+    fullpage_api.moveSectionDown();
+}
+
+const moveSection = () => {
     console.log("Here for Scroll")
-    fullpage_api.moveSectionDown(); 
+    fullpage_api.moveSectionUp();
 }
 
 const HomeData = [
@@ -68,7 +72,7 @@ const HomeData = [
     },
     {
         text: "Section Footer",
-        component: <Footer />
+        component: <Footer moveSection={moveSection} />
     }
 ]
 
