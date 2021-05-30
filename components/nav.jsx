@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 import styles from "../styles/anim.module.css";
 import miscstyles from "../styles/misc.module.css";
@@ -59,40 +60,49 @@ const Nav = ({ nav, toggleNav }) => {
 
       <ul className="text-font-color font-prompt text-6xl font-semibold flex flex-col items-center justify-center h-full">
 
-        <div className="pb-7">
-          <li 
-            className={`mb-7 px-28 ${miscstyles.text}
+        <Link href="/">
+          <a className="pb-7" onClick={() => {toggleNav(false)}}>
+            <li
+              className={`mb-7 px-28 ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
-          >Home</li>
-          <Line number={"01"} />
-        </div>
+            >Home</li>
+            <Line number={"01"} />
+          </a>
+        </Link>
 
-        <div className="pb-7">
-          <li 
-            className={`mb-7 px-52 ${miscstyles.text}
+        <Link href="/team">
+          <a className="pb-7" onClick={() => {toggleNav(false)}}>
+            <li
+              className={`mb-7 px-52 ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
-          >About</li>
-          <Line number={"02"} />
-        </div>
+            >About</li>
+            <Line number={"02"} />
+          </a>
+        </Link>
 
-        <div className="pb-7">
-          <li 
-            className={`mb-7 px-52 ${miscstyles.text}
-              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
-            `}>Gallery</li>
-          <Line number={"03"} />
-        </div>
-
-        <div className="pb-7">
-          <li
-            className={`mb-7 px-28 ${miscstyles.text}
+        <Link href="/">
+          <a className="pb-7" onClick={() => {toggleNav(false)}}>
+            <li
+              className={`mb-7 px-52 ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
-          >Contact</li>
-          <Line number={"04"} />
-        </div>
+            >Gallery</li>
+            <Line number={"03"} />
+          </a>
+        </Link>
+
+        <Link href="/">
+          <a className="pb-7" onClick={() => {toggleNav(false)}}>
+            <li
+              className={`mb-7 px-28 ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}
+            >Contact</li>
+            <Line number={"04"} />
+          </a>
+        </Link>
       </ul>
     </div>
   )

@@ -34,7 +34,7 @@ const Footer = () => {
           
           <p className="text-4xl font-prompt font-light">
             Virugambakkam <br />
-            Chennai- 60092
+            Chennai- 600092
           </p>
 
           <div className="flex gap-4">
