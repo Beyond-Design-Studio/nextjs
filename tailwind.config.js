@@ -18,7 +18,9 @@ module.exports = {
 
   variants: {
     extend: {
-      dropShadow: ["hover"],
+      inset: ["group-hover"],
+      height: ["group-hover"],
+      width: ["group-hover"],
     },
   },
 

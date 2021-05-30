@@ -61,14 +61,6 @@ const HomeData = [
                         key: "yugma",
                         img: "/yugma.png"
                     },
-                    {
-                        key: "yugma1",
-                        img: "/yugma.png"
-                    },
-                    {
-                        key: "yugma2",
-                        img: "/yugma.png"
-                    },
                 ]
             }
         />

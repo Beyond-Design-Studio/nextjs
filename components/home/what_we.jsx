@@ -9,11 +9,6 @@ const WhatWeDo = ({ content }) => {
     <div className="w-full h-screen flex-shrink-0 block">
       <div className="flex h-full items-center justify-center font-prompt">
         <div className={`flex flex-col pl-80`}>
-          <div className={`${styles.design} leading-7 font-robotoc text-accent-color font-semibold text-2xl transform translate-x-96 pb-4`}>
-            <p>DESIGN</p>
-            <p>THE</p>
-            <p>FUTURE</p>
-          </div>
 
           <div className={`${styles.container} flex justify-center`}>
             <div className={`flex flex-col text-font-color text-7xl font-semibold`}>
@@ -42,6 +37,12 @@ const WhatWeDo = ({ content }) => {
                 </Link>
               </div>
             </div>
+          </div>
+
+          <div className={`${styles.design} leading-7 font-robotoc text-accent-color font-semibold text-2xl transform translate-x-96 pb-4`}>
+            <p>DESIGN</p>
+            <p>THE</p>
+            <p>FUTURE</p>
           </div>
 
           <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl transform translate-x-32`}>

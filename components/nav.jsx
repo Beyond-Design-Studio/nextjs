@@ -77,7 +77,7 @@ const Nav = ({ nav, toggleNav }) => {
               className={`mb-7 px-52 ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
-            >About</li>
+            >What we do</li>
             <Line number={"02"} />
           </a>
         </Link>
@@ -88,7 +88,7 @@ const Nav = ({ nav, toggleNav }) => {
               className={`mb-7 px-52 ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
-            >Gallery</li>
+            >Work</li>
             <Line number={"03"} />
           </a>
         </Link>

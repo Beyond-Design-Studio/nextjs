@@ -1,6 +1,7 @@
 import React from "react";
 
-import Sidenav from "../components/team/sidenav";
+import {Sidenav} from "../components/team/misc";
+import Lead from "../components/team/lead";
 
 const Team = () => {
   return (
@@ -9,8 +10,8 @@ const Team = () => {
         
         <Sidenav />
 
-        <div>
-
+        <div className="ml-80 mt-24 w-full">
+          <Lead />
         </div>
 
       </div>

@@ -1,5 +1,5 @@
 .container {
-  --anim-delay: 0.7s
+  --anim-delay: 0.9s
 }
 
 .button {
@@ -10,16 +10,6 @@
   transition: opacity ease var(--anim-delay);
   opacity: 0;
   width: 40rem;
-}
-
-.design {
-  transition: all ease var(--anim-delay);
-  opacity: 1;
-}
-
-.beyond {
-  transition: all ease var(--anim-delay);
-  opacity: 1;
 }
 
 .white-line {
@@ -54,6 +44,15 @@
   opacity: 0;
 }
 
+.container ~ div {
+  transition: opacity ease var(--anim-delay);
+  opacity: 1;
+}
+
+.container ~ .design {
+  order: -1;
+}
+
 .button:hover svg {
   transform: translateX(-4rem);
   /* opacity: 0; */
@@ -72,15 +71,8 @@
   opacity: 0;
 }
 
-.container:hover .design {
-  transition: all ease var(--anim-delay);
-  /* transform: translateY(-8rem); */
-  opacity: 0;
-}
-
-.container:hover .beyond {
-  transition: all ease var(--anim-delay);
-  /* transform: translateY(8rem); */
+.container:hover ~ div {
+  transition: opacity ease var(--anim-delay);
   opacity: 0;
 }
 

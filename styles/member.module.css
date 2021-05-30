@@ -1,0 +1,15 @@
+.img {
+
+}
+
+.falldown {
+
+}
+
+.img:hover .falldown {
+  transition: all ease 0.5s;
+  top: auto;
+  bottom: -3;
+  height: 3px;
+  opacity: 0;
+}
