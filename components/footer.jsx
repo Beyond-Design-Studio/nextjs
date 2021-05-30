@@ -29,12 +29,12 @@ const Footer = ({ moveSection }) => {
           </p>
         </div>
 
-        <div className="flex flex-col items-end flex-shrink-0 w-1/2 justify-around">
+        <div className="flex flex-col items-end flex-shrink-0 w-1/2">
           <img src="/logo.png" height="125" width="143" alt="Beyond Logo" />
           
-          <p className="text-4xl font-prompt font-light">
+          <p className="text-4xl font-prompt font-light pt-4">
             Virugambakkam <br />
-            Chennai- 60092
+            Chennai- 600092
           </p>
 
           <div className="flex gap-4">

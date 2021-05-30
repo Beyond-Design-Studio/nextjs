@@ -26,7 +26,7 @@ const App = () => {
       </Head>
 
       <ReactFullpage
-        navigation
+        navigation={false}
         onLeave={onLeave}
         render={comp =>
           console.log("render prop change") || (

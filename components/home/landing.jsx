@@ -6,8 +6,8 @@ import styles from "../../styles/anim.module.css";
 const Landing = ({ moveSectionDown }) => {
   return (
     <div className="w-full h-screen">
-      <div className="flex items-center justify-center flex-shrink-0" style={{ height: "90%" }}>
-        <div className="flex justify-evenly items-center w-full ">
+      <div className="flex items-center justify-center flex-shrink-0" style={{height: "90%"}}>
+        <div className="pt-12 flex justify-evenly items-center w-full ">
           <div>
             <img src="/logo.png" height="300" width="261" alt="Beyond Logo" />
           </div>

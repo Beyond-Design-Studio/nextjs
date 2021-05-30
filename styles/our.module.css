@@ -2,6 +2,10 @@
   --anim-delay: 0.7s
 }
 
+.button {
+  
+}
+
 .content {
   transition: opacity ease var(--anim-delay);
   transform: translateX(-12rem);
@@ -27,12 +31,12 @@
 
 .title-1 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(-2rem);
+  transform: translateX(2rem);
 }
 
 .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(13rem);
+  transform: translateX(17rem);
 }
 
 .button svg {
@@ -48,12 +52,12 @@
 
 .button:hover svg {
   transform: translateX(-4rem);
-  opacity: 0;
+  /* opacity: 0; */
   transition: all ease var(--anim-delay);
 }
 
 .button:hover p {
-  transform: translateX(0);
+  transform: translateX(-3rem);
   opacity: 1;
   transition: all ease var(--anim-delay);
 }

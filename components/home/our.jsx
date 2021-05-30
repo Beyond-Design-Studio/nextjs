@@ -8,14 +8,14 @@ const Our = ({second, content, re, link}) => {
   return (
     <div className="w-full h-screen flex-shrink-0 block">
       <div className="flex h-full items-center justify-center font-prompt">
-        <div className={`${styles.container} flex flex-col pl-96`}>
-          <div className={`${styles.design} text-accent-color font-semibold text-2xl transform translate-x-96 pb-4`}>
+        <div className={`flex flex-col pl-96`}>
+          <div className={`${styles.design} leading-7 font-robotoc text-accent-color font-semibold text-2xl transform translate-x-96 pb-4`}>
             <p>DESIGN</p>
             <p>THE</p>
             <p>FUTURE</p>
           </div>
 
-          <div className="flex">
+          <div className={`${styles.container} flex justify-center`}>
             <div className={`flex flex-col text-font-color text-7xl font-semibold`}>
               <div className={`${styles["title-1"]} flex items-center gap-6`}>
                 <div className="bg-accent-color h-2 w-24"></div>
@@ -42,7 +42,7 @@ const Our = ({second, content, re, link}) => {
             </div>
           </div>
 
-          <div className={`${styles.beyond} text-font-color font-semibold text-2xl`}>
+          <div className={`${styles.beyond} leading-7 font-robotoc text-font-color font-semibold text-2xl`}>
             <p>BEYOND</p>
             <p>YOUR</p>
             <p>IMAGINATION</p>
