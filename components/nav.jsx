@@ -11,7 +11,7 @@ const NavButton = ({ classes }) => {
   return (
     <>
       <div className={`${classes}`}>
-        <button className="text-accent-color" onClick={() => toggleNav(true)}>
+        <button className="text-accent-color" onClick={() => {toggleNav(true); console.log("object")}}>
           <svg className={`fill-current ${styles.ham}`} width="50" height="15" viewBox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.lineone} width="50" height="4" />
             <rect className={styles.linetwo} width="25" height="4" x="25" y="11" />

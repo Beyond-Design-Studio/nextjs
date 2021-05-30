@@ -5,10 +5,11 @@ import WhatWeDo from "../components/home/what_we";
 import Our from "../components/home/our";
 import Clientele from "../components/home/clientele";
 import Create from "../components/home/create";
+import Footer from "../components/footer";
 
 const moveSectionDown = () => {
     console.log("Here for Scroll")
-    fullpage_api.moveSectionDown();
+    fullpage_api.moveSectionDown(); 
 }
 
 const HomeData = [
@@ -64,6 +65,10 @@ const HomeData = [
     {
         text: "Setion Create",
         component: <Create />
+    },
+    {
+        text: "Section Footer",
+        component: <Footer />
     }
 ]
 
