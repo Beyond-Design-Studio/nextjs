@@ -2,6 +2,10 @@ import React from "react";
 
 import {Sidenav} from "../components/team/misc";
 import Lead from "../components/team/lead";
+import Dev from "../components/team/dev";
+import Admin from "../components/team/admin";
+import UiUx from "../components/team/ui_ux";
+import Vpd from "../components/team/vpd";
 
 const Team = () => {
   return (
@@ -10,8 +14,12 @@ const Team = () => {
         
         <Sidenav />
 
-        <div className="ml-80 mt-24 w-full">
+        <div className="ml-64 mt-24 w-full flex flex-col gap-32">
           <Lead />
+          <Dev />
+          <UiUx />
+          <Admin />
+          <Vpd />
         </div>
 
       </div>

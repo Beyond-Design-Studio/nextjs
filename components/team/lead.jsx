@@ -21,31 +21,91 @@ props: {
 
 const Lead = () => {
   return (
-    <div className="w-full ">
-      <Title title={"Leadership"} />
-      <div style={{
-        width: "240px",
-        height: "400px"
-      }}>
-        <Quote
-          author={"Musashi Miyamoto"}
-          quote={"Leverage agile frameworksgh level overviews. Iterative approaches to corporate strategy camera."}
-        />
-        <Mem 
-          img="/team/ritul.png"
-          name="Ritul Satish"
-          desi="Chief Experience Officer"
-          fall="down"
-          position={{
-            top: 9,
-            left: 0,
-            right: "auto",
-            bottom: "auto",
-            width: 48,
-            height: 20
-          }}
-        />
+    <div className="w-full flex flex-col gap-24" id="lead">
+      <Title
+        title={"Leadership"}
+        classes=""
+      />
+      
+      <div className="w-full flex justify-end">
+        <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
+          <Mem
+            img="/team/ritul.png"
+            name="Ritul Satish"
+            desi="Chief Experience Officer"
+            fall="down"
+            position={{
+              top: 9,
+              left: 0,
+              right: "auto",
+              bottom: "auto",
+              width: 64,
+              height: 28
+            }}
+          />
+          <Mem
+            img="/team/ritul.png"
+            name="Swayam Saraogi"
+            desi="Chief Design Officer"
+            fall="down"
+            position={{
+              top: 9,
+              left: 0,
+              right: "auto",
+              bottom: "auto",
+              width: 48,
+              height: 28
+            }}
+          />
+          <Mem
+            img="/team/ritul.png"
+            name="Spatikkaa Veddmurthy"
+            desi="Chief Operations Officer"
+            fall="down"
+            position={{
+              top: 9,
+              left: 0,
+              right: "auto",
+              bottom: "auto",
+              width: 48,
+              height: 28
+            }}
+          />
+          <Quote
+            author={"Paul Caponigro"}
+            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+          />
+          <Mem
+            img="/team/aarav.png"
+            name="Aarav Varshney"
+            desi="Chief Technological Officer"
+            fall="left"
+            position={{
+              top: 0,
+              left: 32,
+              right: "auto",
+              bottom: "auto",
+              width: 32,
+              height: 52
+            }}
+          />
+          <Mem
+            img="/team/bahana.png"
+            name="Bahana Saikia"
+            desi="Chief Inovation Officer"
+            fall="down"
+            position={{
+              top: 5,
+              left: "auto",
+              right: 0,
+              bottom: "auto",
+              width: 56,
+              height: 28
+            }}
+          />
+        </div>
       </div>
+      
     </div>
   );
 };

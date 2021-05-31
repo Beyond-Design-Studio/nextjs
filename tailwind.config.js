@@ -21,6 +21,7 @@ module.exports = {
       inset: ["group-hover"],
       height: ["group-hover"],
       width: ["group-hover"],
+      scale: ["group-hover"],
     },
   },
 

@@ -10,19 +10,21 @@ const Sidenav = () => {
     }
     >
 
-      <div>Leadership</div>
-      <div>Development</div>
-      <div>UI/UX Design</div>
-      <div>Administrative</div>
-      <div>Visual and Product Design</div>
+      <div>
+        <a href="#lead">Leadership</a>
+      </div>
+      <a href="#dev">Development</a>
+      <a href="#uiux">UI/UX Design</a>
+      <a href="#admin">Administrative</a>
+      <a href="#vpd">Visual and Product Design</a>
     </div>
   );
 };
 
 
-const Title = ({title}) => {
+const Title = ({title, classes}) => {
   return (
-    <div className="flex items-center">
+    <div className={`${classes} flex items-center`}>
       <div className="transform -translate-x-28 h-3 w-40 bg-accent-color"></div>
       <h1 className="font-prompt text-7xl text-font-color font-semibold">{title}</h1>
     </div>
@@ -44,7 +46,7 @@ const Quote = ({author, quote}) => {
         <p className="text-xs font-prompt font-bold">{author}</p>
       </div>
 
-      <div className="my-auto text-font-color font-prompt text-2xl">
+      <div className="my-auto text-font-color font-light font-prompt text-3xl leading-10">
         <p>{quote}</p>
       </div>
 
@@ -85,19 +87,19 @@ const Mem = ({img, name, desi, position, fall}) => {
       break;
     case ("left"):
       dim = "w-0";
-      dir = "left-full";
+      dir = "left-0";
       break;
     case ("right"):
       dim = "w-0";
-      dir = "right-full";
+      dir = "right-0";
       break
     default:
       dir = "";
   }
 
   return (
-    <div className="w-full h-full">
-      <div className={`group h-4/5 bg-red-700 relative ${styles.img}`}>
+    <div className="group w-full h-full">
+      <div className={`h-4/5 bg-transparent relative`}>
         <img src={img} alt={name} className="filter grayscale h-full w-full object-contain"/>
         
         <div
@@ -113,8 +115,8 @@ const Mem = ({img, name, desi, position, fall}) => {
         </div>
       </div>
       <div className="flex justify-between h-1/5 items-center text-font-color font-prompt font-light text-sm">
-        <p className="w-1/4 text-left">{name}</p>
-        <p className="w-4/12 text-right">{desi}</p>
+        <p className="transform transition-transform ease-out duration-300 origin-top-left group-hover:scale-125 w-1/4 text-left">{name}</p>
+        <p className="transform transition-transform ease-out duration-300 origin-top-right group-hover:scale-125 w-4/12 text-right">{desi}</p>
       </div>
     </div>
   );
