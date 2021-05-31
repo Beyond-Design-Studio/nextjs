@@ -14,8 +14,8 @@ const Admin = () => {
         <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
           <Mem
             img="/team/ritul.png"
-            name="Ritul Satish"
-            desi="Chief Experience Officer"
+            name="Rochan Mohapatra"
+            desi="Head of Operations and Logistics"
             fall="down"
             position={{
               top: 9,
@@ -34,8 +34,8 @@ const Admin = () => {
           
           <Mem
             img="/team/arshia.png"
-            name="Spatikkaa Veddmurthy"
-            desi="Chief Operations Officer"
+            name="Arisha Sood"
+            desi="Finance Executive"
             fall="right"
             position={{
               top: "auto",
@@ -49,31 +49,31 @@ const Admin = () => {
           
           <Mem
             img="/team/harsha.png"
-            name="Aarav Varshney"
-            desi="Chief Technological Officer"
-            fall="left"
+            name="Harsha Mini"
+            desi="Head of Outreach"
+            fall="right"
             position={{
               top: 0,
-              left: 32,
-              right: "auto",
+              left: "auto",
+              right: 24,
               bottom: "auto",
               width: 32,
-              height: 52
+              height: 60
             }}
           />
           
           <Mem
             img="/team/kavya.png"
-            name="Bahana Saikia"
-            desi="Chief Inovation Officer"
+            name="Kavya Satish"
+            desi="Social Media Marketer"
             fall="down"
             position={{
-              top: 5,
-              left: "auto",
-              right: 0,
+              top: 9,
+              left: 0,
+              right: "auto",
               bottom: "auto",
               width: 56,
-              height: 28
+              height: 44
             }}
           />
 
@@ -88,31 +88,32 @@ const Admin = () => {
           />
           <Mem
             img="/team/oishiki.png"
-            name="Aarav Varshney"
-            desi="Chief Technological Officer"
-            fall="left"
-            position={{
-              top: 0,
-              left: 32,
-              right: "auto",
-              bottom: "auto",
-              width: 32,
-              height: 52
-            }}
-          />
-
-          <Mem
-            img="/team/radhika.png"
-            name="Bahana Saikia"
-            desi="Chief Inovation Officer"
+            name="Oishiki Ganguly"
+            desi="Social Media Marketer"
             fall="down"
             position={{
               top: 5,
               left: "auto",
               right: 0,
               bottom: "auto",
-              width: 56,
-              height: 28
+              width: 52,
+              height: 32
+            }}
+          />
+
+          <Mem
+            img="/team/radhika.png"
+            name="Radhika Vichitra"
+            desi="Social Media Marketer"
+            fall="left"
+            position={{
+              
+              top: 0,
+              left: 24,
+              right: "auto",
+              bottom: "auto",
+              width: 32,
+              height: 40
             }}
           />
         </div>

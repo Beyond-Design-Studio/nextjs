@@ -13,23 +13,23 @@ const Vpd = () => {
       <div className="w-full flex justify-end">
         <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
           <Mem
-            img="/team/ritul.png"
-            name="Ritul Satish"
-            desi="Chief Experience Officer"
+            img="/team/tanisha.png"
+            name="Tanisha Singh"
+            desi="Visual Designer"
             fall="down"
             position={{
-              top: 9,
+              top: 5,
               left: 0,
               right: "auto",
               bottom: "auto",
               width: 64,
-              height: 28
+              height: 40
             }}
           />
           <Mem
             img="/team/ritul.png"
-            name="Swayam Saraogi"
-            desi="Chief Design Officer"
+            name="Vanshika"
+            desi="Digital Illustrator"
             fall="down"
             position={{
               top: 9,
@@ -41,17 +41,17 @@ const Vpd = () => {
             }}
           />
           <Mem
-            img="/team/ritul.png"
-            name="Spatikkaa Veddmurthy"
-            desi="Chief Operations Officer"
+            img="/team/biratal.png"
+            name="Biratal Wagle"
+            desi="Visual Designer"
             fall="down"
             position={{
               top: 9,
-              left: 0,
-              right: "auto",
+              left: "auto",
+              right: 0,
               bottom: "auto",
-              width: 48,
-              height: 28
+              width: 56,
+              height: 36
             }}
           />
 

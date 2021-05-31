@@ -32,8 +32,8 @@ const Dev = () => {
           />
           <Mem
             img="/team/alfred.png"
-            name="Swayam Saraogi"
-            desi="Chief Design Officer"
+            name="Alfred Daimari"
+            desi="Web Developer"
             fall="right"
             position={{
               top: 0,
@@ -46,8 +46,8 @@ const Dev = () => {
           />
           <Mem
             img="/team/niranjan.png"
-            name="Spatikkaa Veddmurthy"
-            desi="Chief Operations Officer"
+            name="Niranjan Rajesh"
+            desi="Web Developer"
             fall="down"
             position={{
               top: 9,
@@ -60,8 +60,8 @@ const Dev = () => {
           />
           <Mem
             img="/team/shuhaib.png"
-            name="Aarav Varshney"
-            desi="Chief Technological Officer"
+            name="Shuhaib Ibrahim"
+            desi="Web Devloper Intern"
             fall="right"
             position={{
               top: "auto",
