@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import {Sidenav} from "../components/team/misc";
 import Lead from "../components/team/lead";
@@ -10,6 +11,11 @@ import Vpd from "../components/team/vpd";
 const Team = () => {
   return (
     <div className="w-full min-h-screen">
+
+      <Head>
+        <title>Beyond Design Studio Team</title>
+      </Head>
+
       <div className="flex h-full">
         
         <Sidenav />
