@@ -1,0 +1,37 @@
+.camera {
+  display: flex;
+  transition: all ease-in 0.5s;
+  --dim: 7px;
+  --border-rad: 0px;
+}
+
+.camera::before {
+  transform: translate(-2px, -2px);
+  width: var(--dim);
+  height: var(--dim);
+  background: transparent;
+  content: "";
+  display: block;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-top-width: var(--border-rad);
+  border-left-width: var(--border-rad);
+}
+
+.camera::after {
+  width: var(--dim);
+  height: var(--dim);
+  background: transparent;
+  content: "";
+  display: block;
+  align-self: flex-end;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom-width: var(--border-rad);
+  border-right-width: var(--border-rad);
+}
+
+.camera:hover {
+  transition: all ease-in 0.5s;
+  --border-rad: 2px;
+}

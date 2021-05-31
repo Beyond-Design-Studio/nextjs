@@ -10,13 +10,21 @@ const Sidenav = () => {
     }
     >
 
-      <div>
+      <div className={`${styles.camera}`}>
         <a href="#lead">Leadership</a>
       </div>
-      <a href="#dev">Development</a>
-      <a href="#uiux">UI/UX Design</a>
-      <a href="#admin">Administrative</a>
-      <a href="#vpd">Visual and Product Design</a>
+      <div className={`${styles.camera}`}>
+        <a href="#dev">Development</a>
+      </div>
+      <div className={`${styles.camera}`}>
+        <a href="#uiux">UI/UX Design</a>
+      </div>
+      <div className={`${styles.camera}`}>
+        <a href="#admin">Administrative</a>
+      </div>
+      <div className={`${styles.camera}`}>
+        <a href="#vpd">Visual and Product Design</a>
+      </div>
     </div>
   );
 };
