@@ -33,5 +33,5 @@
 
 .camera:hover {
   transition: all ease-in 0.5s;
-  --border-rad: 2px;
+  --border-rad: 3px;
 }

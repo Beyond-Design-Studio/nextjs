@@ -7,13 +7,13 @@ const Landing = ({ moveSectionDown }) => {
   return (
     <div className="w-full h-screen">
       <div className="flex items-center justify-center flex-shrink-0" style={{height: "90%"}}>
-        <div className="pt-36 flex justify-evenly items-center w-full ">
+        <div className="pt-24 sm:pt-36 gap-16 flex flex-wrap justify-evenly items-center w-full ">
           <div>
-            <img src="/logo.png" height="300" width="261" alt="Beyond Logo" />
+            <img className="h-48 w-44 sm:w-52 sm:h-56 xl:w-72 xl:h-80" src="/logo.png" alt="Beyond Logo" />
           </div>
 
-          <h1 className="font-prompt text-7xl text-font-color leading-relaxed">
-            Design the future. <br /> Work with us now
+          <h1 className="text-center lg:text-left font-prompt text-3xl sm:text-5xl md:text-6xl xl:text-7xl text-font-color sm:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
+            Design the future. <br /> Create with us now
           </h1>
         </div>
       </div>
