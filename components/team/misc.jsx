@@ -6,7 +6,7 @@ const Sidenav = () => {
   return (
     <div className={
       `p-10 fixed flex flex-col justify-end items-start gap-6 
-          text-font-color font-prompt text-sm w-80 h-screen`
+      text-font-color font-prompt text-base w-80 h-screen`
     }
     >
 
@@ -40,7 +40,7 @@ const Title = ({title, classes}) => {
 };
 
 
-const Quote = ({author, quote}) => {
+const Quote = ({quote}) => {
   return (
     <div className="flex flex-col w-full h-full">
       
@@ -51,10 +51,10 @@ const Quote = ({author, quote}) => {
 
         <div className="w-5/6 h-0.5 bg-current"></div>
 
-        <p className="text-xs font-prompt font-bold">{author}</p>
+        {/* <p className="text-xs font-prompt font-bold">{author}</p> */}
       </div>
 
-      <div className="my-auto text-font-color font-light font-prompt text-3xl leading-10">
+      <div className="mt-16 text-font-color font-light font-prompt text-3xl leading-10">
         <p>{quote}</p>
       </div>
 
@@ -108,11 +108,11 @@ const Mem = ({img, name, desi, position, fall}) => {
   return (
     <div className="group w-full h-full">
       <div className={`h-4/5 bg-transparent relative`}>
-        <img src={img} alt={name} className="filter grayscale h-full w-full object-contain"/>
+        <img src={img} alt={name} className="filter grayscale h-full w-full object-cover object-top"/>
         
         <div
           className={`
-            transition-all ease-out duration-500 group-hover:${dir} group-hover:${dim} w-${position.width} h-${position.height}
+            transition-all ease-out duration-700 group-hover:${dir} group-hover:${dim} w-${position.width} h-${position.height}
             absolute top-${position.top} left-${position.left} bottom-${position.bottom} right-${position.right}
           `}
           style={{

@@ -38,6 +38,20 @@ const Line = ({ number }) => {
 }
 
 
+const NavItem = ({name, number, type}) => {
+  return (
+    <>
+      <li
+        className={`mb-2 md:mb-7 px-${type === 52 ? 16 : 12} md:px-${type} ${miscstyles.text}
+              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
+            `}
+      >{name}</li>
+      <Line number={number} />
+    </>      
+  );
+}
+
+
 const Nav = ({ nav, toggleNav }) => {
 
   return (
@@ -48,7 +62,7 @@ const Nav = ({ nav, toggleNav }) => {
         flex flex-col z-20
       `}
     >
-      <div className="w-full flex justify-end pt-16 pb-2 pr-20">
+      <div className="w-full flex justify-end pt-12 md:pt-16 pb-2 pr-12 md:pr-20">
         <button className="text-accent-color" onClick={() => { toggleNav(false) }}>
           <svg className="fill-current" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 28.2844L28.2843 0.000153065L31.1127 2.82858L2.82843 31.1129L0 28.2844Z" />
@@ -58,49 +72,47 @@ const Nav = ({ nav, toggleNav }) => {
         </button>
       </div>
 
-      <ul className="text-font-color font-prompt text-6xl font-semibold flex flex-col items-center justify-center h-full">
+      <ul className="text-font-color font-prompt text-4xl md:text-5xl lg:text-6xl font-semibold flex flex-col items-center justify-center h-full">
+
 
         <Link href="/">
-          <a className="pb-7" onClick={() => {toggleNav(false)}}>
-            <li
-              className={`mb-7 px-28 ${miscstyles.text}
-              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
-            `}
-            >Home</li>
-            <Line number={"01"} />
+          <a className="pb-7" onClick={() => { toggleNav(false) }}>
+            <NavItem 
+              name={"Home"}
+              number={"01"}
+              type={28}
+            />
           </a>
         </Link>
+
 
         <Link href="/team">
           <a className="pb-7" onClick={() => {toggleNav(false)}}>
-            <li
-              className={`mb-7 px-52 ${miscstyles.text}
-              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
-            `}
-            >What we do</li>
-            <Line number={"02"} />
+            <NavItem
+              name={"What we do"}
+              number={"02"}
+              type={52}
+            />
           </a>
         </Link>
 
         <Link href="/">
           <a className="pb-7" onClick={() => {toggleNav(false)}}>
-            <li
-              className={`mb-7 px-52 ${miscstyles.text}
-              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
-            `}
-            >Work</li>
-            <Line number={"03"} />
+            <NavItem
+              name={"Work"}
+              number={"03"}
+              type={52}
+            />
           </a>
         </Link>
 
         <Link href="/">
           <a className="pb-7" onClick={() => {toggleNav(false)}}>
-            <li
-              className={`mb-7 px-28 ${miscstyles.text}
-              transform hover:scale-105 hover:translate-y-2 transition-all duration-500
-            `}
-            >Contact</li>
-            <Line number={"04"} />
+            <NavItem
+              name={"Contact"}
+              number={"04"}
+              type={28}
+            />
           </a>
         </Link>
       </ul>

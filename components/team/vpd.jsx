@@ -65,17 +65,17 @@ const Vpd = () => {
           </div>
 
           <Mem
-            img="/team/bahana.png"
-            name="Bahana Saikia"
-            desi="Chief Inovation Officer"
+            img="/team/bear.png"
+            name="Join Us"
+            desi="All Positions Open"
             fall="down"
             position={{
-              top: 5,
+              top: 9,
               left: "auto",
               right: 0,
               bottom: "auto",
               width: 56,
-              height: 28
+              height: 32
             }}
           />
         </div>

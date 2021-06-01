@@ -1,36 +1,37 @@
 .container {
-  --anim-delay: 0.9s
+  --anim-delay: 0.9s;
 }
 
 .button {
-
 }
 
-.content {
-  transition: opacity ease var(--anim-delay);
-  opacity: 0;
-  width: 40rem;
+.beyond {
+  transform: translate(4rem, -14rem);
+}
+
+.design {
+  transform: translate(14rem, 2rem);
 }
 
 .white-line {
   transition: all ease var(--anim-delay);
-  transform: translateX(18rem);
+  /* transform: translateX(18rem); */
   opacity: 1;
 }
 
 .title-1 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(-2rem);
+  /* transform: translateX(-2rem); */
 }
 
 .title-2 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(14rem);
+  /* transform: translateX(14rem); */
 }
 
 .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(18rem);
+  /* transform: translateX(18rem); */
 }
 
 .button svg {
@@ -49,7 +50,7 @@
   opacity: 1;
 }
 
-.container ~ .design {
+.design {
   order: -1;
 }
 
@@ -65,15 +66,17 @@
   transition: all ease var(--anim-delay);
 }
 
-.container:hover .white-line {
-  transition: all ease var(--anim-delay);
-  transform: translateX(32rem);
-  opacity: 0;
-}
-
 .container:hover ~ div {
   transition: opacity ease var(--anim-delay);
   opacity: 0;
+}
+
+.content {
+  transition: opacity ease var(--anim-delay);
+  opacity: 0;
+  width: 85%;
+  transform: translate(0, -7rem);
+  /* width: 40rem; */
 }
 
 .container:hover .content {
@@ -83,15 +86,121 @@
 
 .container:hover .title-1 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(-24rem);
+  transform: translate(-4rem, -5rem);
 }
 
 .container:hover .title-2 {
   transition: transform ease var(--anim-delay);
-  transform: translate(-3.8rem, -4.6rem);
+  transform: translate(9rem, -8rem);
 }
 
 .container:hover .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translate(4.1rem, -9rem);
+  transform: translate(14rem, -11rem);
+}
+
+.container:hover .white-line {
+  transition: all ease var(--anim-delay);
+  transform: translate(11rem, -9.5rem);
+  /* opacity: 0; */
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 0;
+    width: 85%;
+    transform: translate(0, -7rem);
+    /* width: 40rem; */
+  }
+
+  .container:hover .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 1;
+  }
+
+  .container:hover .title-1 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(-10rem, -5rem);
+  }
+
+  .container:hover .title-2 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(8.5rem, -8.85rem);
+  }
+
+  .container:hover .title-3 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(15rem, -12.5rem);
+  }
+
+  .container:hover .white-line {
+    transition: all ease var(--anim-delay);
+    transform: translate(13rem, -10.7rem);
+    /* opacity: 0; */
+  }
+
+  .beyond {
+    transform: translate(14rem, -14rem);
+  }
+
+  .design {
+    transform: translate(30rem);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  
+  .beyond {
+    transform: translate(26rem, -12rem);
+  }
+
+  .design {
+    transform: translate(44rem, 0);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 0;
+    /* width: 55%; */
+    width: 40rem;
+    transform: translate(0, 0rem);
+  }
+
+  .container:hover .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 1;
+  }
+
+  .container:hover .title-1 {
+    transition: transform ease var(--anim-delay);
+    transform: translateX(-24rem);
+  }
+
+  .container:hover .title-2 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(-3.8rem, -4.6rem);
+  }
+
+  .container:hover .title-3 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(4.1rem, -9rem);
+  }
+
+  .container:hover .white-line {
+    transition: all ease var(--anim-delay);
+    transform: translateX(32rem);
+    opacity: 0;
+  }
+
+  .beyond {
+    transform: translateX(8rem);
+  }
+
+  .design {
+    transform: translateX(24rem);
+  }
 }
