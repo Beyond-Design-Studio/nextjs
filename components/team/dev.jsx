@@ -50,11 +50,11 @@ const Dev = () => {
             desi="Web Developer"
             fall="down"
             position={{
-              top: 9,
+              top: 11,
               left: "auto",
               right: 0,
               bottom: "auto",
-              width: 52,
+              width: 56,
               height: 36
             }}
           />
