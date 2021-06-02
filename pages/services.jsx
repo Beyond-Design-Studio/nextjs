@@ -3,99 +3,104 @@ import React from "react";
 function ServDis() {
   const info = [
     {
-      title: "Ellowhale",
-      subtitle: "UI/UX Design",
-      image: "work-ellowhale.png",
+      title: "Visual & Product Design",
+      image: "services-visual.svg",
       description:
-        "A student/tutor dashboard made for an after school academy. It enables a student to track their performance and the tutor to enter said data.",
+        "We look to translate thought into reality and use visuals, typography and creative artistry to achieve the same. All aspects of your brand, from logos to websites, business cards to social media content are carefully crafted to enhance your brand’s image. We also customize posters and design products from scratch allowing for innovation and originality to take flight.",
     },
     {
-      title: "Candid Expressions",
-      subtitle: "UI/UX Design",
-      image: "work-candid-expressions.png",
+      title: "User Experience Design",
+      image: "services-uexd.svg",
       description:
-        "A creative content sharing platform to build a community for artists. They draw inspiration from each other while staying true to their authentic creative style.",
+        "We design user centered interfaces for software and apps by conducting thorough UX research and mapping user experiences. We aim to connect business goals to user needs by defining product strategy through research, testing and refinement.  The design elements of a product or service are in sync to ensure the conversation between the user and the product is enjoyable, smooth and memorable",
     },
     {
-      title: "Kimaye",
-      subtitle: "Graphic Design",
-      image: "work-kimaye.png",
+      title: "Development and Tech",
+      image: "services-devtech.svg",
       description:
-        "Custom graphics for Kimaye - a farm to home FnV brand. Creatives were used in the launch of two new fruits for their e-comm website. Home page banners were designed for the launch of seasonal fruits and for christmas.",
-    },
-    {
-      title: "RadioQuam",
-      subtitle: "Development & Deployment",
-      image: "work-radioquam.png",
-      description:
-        "Developed an entertaiment blog/platform- Radioqaum with the latest tech stack for best performance. We also achieved high SEO score for the platform.",
-    },
-    {
-      title: "Yugma",
-      subtitle: "Website Design",
-      image: "work-yugma.png",
-      description:
-        "Tailor-made website platform and creatives for Yugma Net, an active grass-roots environmental initiative in India. An active blog integration, to further the cause of environmental change in India, was required and was based on the unique brand identity of Yugma.",
+        "We bring your fascinating ideas from a scintillating design to a full fledged working application using the latest tech stacks to give your product the best possible performance.",
     },
   ];
 
   return (
-    <div className="w-full z-20 -mb-52">
+    <div className="w-full z-20 -mb-52 relative">
       {info.map((item, index) => {
-        return index % 2 == 0 ? (
+        return index % 2 != 0 ? (
           <div
             key={index}
-            className="w-full flex justify-between items-center z-20 relative mb-36"
+            className="w-full flex items-center z-20 relative mb-24 space-x-10"
           >
-            <div className="w-5/12">
-              <div className="w-6/12">
-                <h1 className="font-roboto text-white font-medium text-5xl w-auto ml-32">
+            <div className="w-6/12">
+              <div className="w-full">
+                <h1 className="font-productsans text-white font-medium text-5xl w-auto ml-28">
                   {item.title}
                 </h1>
-                <div className="w-5/12 h-1 mt-2 border-b-8 border-solid border-accent-color ml-32"></div>
               </div>
-              <div className="w-10/12 mt-24 bg-red-900 bg-opacity-20 ml-24 pb-8 pt-8">
-                <div className="w-8/12 border-t-2 border-solid border-accent-color ml-6"></div>
-                <p className="text-accent-color w-3/12 text-lg ml-10 mt-2 font-bold">
-                  {item.subtitle}
-                </p>
-                <p className="text-2xl text-white w-8/12 ml-10 mt-6">
+              <div className="ml-28">
+                <p className="text-lg text-white mt-6 w-full">
                   {item.description}
                 </p>
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="relative left-1/2 transform -translate-x-1/2 mt-8"
+                >
+                  <path
+                    d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
             </div>
-            <div className="w-5/12 mr-32">
+            <div className="w-5/12 max-h-96 mr-32">
               <img className="object-fill rounded-3xl" src={item.image} />
             </div>
           </div>
         ) : (
           <div
             key={index}
-            className="w-full flex justify-between items-center z-20 relative mb-36"
+            className="w-full flex items-center z-20 relative mb-24 space-x-10"
           >
-            <div className="w-5/12 ml-20">
+            <div className="w-5/12 ml-20 max-h-96">
               <img className="object-fill rounded-3xl" src={item.image} />
             </div>
-            <div className="w-5/12">
-              <div className="w-6/12 flex flex-col items-end ml-20">
-                <h1 className="font-roboto text-white font-medium text-5xl w-auto text-right">
+            <div className={"w-5/12" + (index == 2 ? " mt-36" : "")}>
+              <div className="w-full flex flex-col">
+                <h1 className="font-productsans text-white font-medium text-5xl">
                   {item.title}
                 </h1>
-                <div className="w-5/12 h-1 mt-2 border-b-8 border-solid border-accent-color"></div>
               </div>
-              <div className="w-10/12 mt-24 bg-red-900 bg-opacity-20 pb-8 pt-8">
-                <div className="w-8/12 border-t-2 border-solid border-accent-color ml-24"></div>
-                <p className="text-accent-color w-3/12 text-lg ml-32 mt-2 font-bold">
-                  {item.subtitle}
-                </p>
-                <p className="text-2xl text-white w-8/12 ml-32 mt-6">
+              <div>
+                <p className="text-lg text-white mt-6 w-full">
                   {item.description}
                 </p>
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="relative left-1/2 transform -translate-x-1/2 mt-8"
+                >
+                  <path
+                    d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
             </div>
           </div>
         );
       })}
+      <h1 className="w-full text-white text-5xl font-prompt font-light mt-52 text-center relative">
+        Allow us to Elevate your Brand
+      </h1>
+      <button className="bg-accent-color w-36 h-12 rounded-xl text-white focus:outline-none text-lg relative left-1/2 transform -translate-x-1/2 mt-10 mb-32">
+        Talk To Us
+      </button>
     </div>
   );
 }
@@ -103,11 +108,10 @@ function ServDis() {
 export default function Services() {
   return (
     <div className="h-full">
-      <h1 className="w-full text-center text-white text-7xl font-prompt font-bold pt-14 relative z-10">
+      <h1 className="w-full text-white text-7xl font-prompt font-bold pt-24 ml-20 mb-32">
         Our Services
       </h1>
       <ServDis />
-      <div className="md:w-72 md:h-full md:bg-red-800 md:fixed md:top-0 md:left-1/2 md:transform md:-translate-x-1/2 md:z-0 md:opacity-95 hidden md:block"></div>
     </div>
   );
 }
