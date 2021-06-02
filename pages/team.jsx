@@ -18,9 +18,11 @@ const Team = () => {
 
       <div className="flex h-full">
         
-        <Sidenav />
+        <div className="hidden md:block">
+          <Sidenav />
+        </div>
 
-        <div className="ml-64 mt-24 w-full flex flex-col gap-32">
+        <div className="p-3 md:p-0 ml-0 md:ml-64 mt-24 md:mt-24 w-full grid grid-cols-1 gap-32">
           <Lead />
           <Dev />
           <UiUx />

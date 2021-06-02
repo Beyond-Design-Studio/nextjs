@@ -11,7 +11,7 @@ const NavButton = ({ classes }) => {
 
   return (
     <>
-      <div className={`${classes} z-10`}>
+      <div className={`${classes} z-20`}>
         <button className="text-accent-color" onClick={() => toggleNav(true)}>
           <svg className={`fill-current ${styles.ham}`} width="50" height="15" viewBox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.lineone} width="50" height="4" />
@@ -96,7 +96,7 @@ const Nav = ({ nav, toggleNav }) => {
           </a>
         </Link>
 
-        <Link href="/">
+        <Link href="/work">
           <a className="pb-7" onClick={() => {toggleNav(false)}}>
             <NavItem
               name={"Work"}

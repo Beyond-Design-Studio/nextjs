@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Quote, Mem } from "./misc";
+import { Title, Quote, Mem, Container } from "./misc";
 
 
 const UiUx = () => {
@@ -11,7 +11,7 @@ const UiUx = () => {
       />
 
       <div className="w-full flex justify-end">
-        <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
+        <Container>
           <Quote
             author={"Paul Caponigro"}
             quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
@@ -44,7 +44,7 @@ const UiUx = () => {
               height: 44
             }}
           />
-        </div>
+        </Container>
       </div>
 
     </div>

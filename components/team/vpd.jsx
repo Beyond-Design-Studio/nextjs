@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Quote, Mem } from "./misc";
+import { Title, Quote, Mem, Container } from "./misc";
 
 
 const Vpd = () => {
@@ -11,7 +11,7 @@ const Vpd = () => {
       />
 
       <div className="w-full flex justify-end">
-        <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
+        <Container>
           <Mem
             img="/team/tanisha.png"
             name="Tanisha Singh"
@@ -55,30 +55,29 @@ const Vpd = () => {
             }}
           />
 
-          <div style={{
-            gridColumn: "1 / 3"
-          }}>
-            <Quote
-              author={"Paul Caponigro"}
-              quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+          <Quote
+            author={"Paul Caponigro"}
+            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+          />
+
+          <div className="col-span-2">
+            <Mem
+              img="/team/bear.png"
+              name="Join Us"
+              desi="All Positions Open"
+              fall="down"
+              position={{
+                top: 9,
+                left: "auto",
+                right: 0,
+                bottom: "auto",
+                width: 56,
+                height: 32
+              }}
             />
           </div>
 
-          <Mem
-            img="/team/bear.png"
-            name="Join Us"
-            desi="All Positions Open"
-            fall="down"
-            position={{
-              top: 9,
-              left: "auto",
-              right: 0,
-              bottom: "auto",
-              width: 56,
-              height: 32
-            }}
-          />
-        </div>
+        </Container>
       </div>
 
     </div>

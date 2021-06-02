@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Quote, Mem } from "./misc";
+import { Title, Quote, Mem, Container } from "./misc";
 
 
 const Admin = () => {
@@ -11,7 +11,7 @@ const Admin = () => {
       />
 
       <div className="w-full flex justify-end">
-        <div className="w-10/12 pr-8 mr-16 grid grid-cols-3 gap-x-10 gap-y-12">
+        <Container>
           <Mem
             img="/team/ritul.png"
             name="Rochan Mohapatra"
@@ -116,7 +116,7 @@ const Admin = () => {
               height: 40
             }}
           />
-        </div>
+        </Container>
       </div>
 
     </div>

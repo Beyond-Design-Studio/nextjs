@@ -45,7 +45,7 @@ function WorkDis() {
         return index % 2 == 0 ? (
           <div
             key={index}
-            className="w-full flex justify-between items-center z-20 relative mb-36"
+            className="w-full flex justify-between items-center z-10 relative mb-36"
           >
             <div className="w-5/12">
               <div className="w-6/12">

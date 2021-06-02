@@ -32,9 +32,10 @@ const Sidenav = () => {
 
 const Title = ({title, classes}) => {
   return (
-    <div className={`${classes} flex items-center`}>
-      <div className="transform -translate-x-28 h-3 w-40 bg-accent-color"></div>
-      <h1 className="font-prompt text-7xl text-font-color font-semibold">{title}</h1>
+    <div className={`${classes} flex gap-3 md:gap-0 flex-col md:flex-row items-start md:items-center`}>
+      <div className="hidden md:block transform -translate-x-28 h-3 w-40 bg-accent-color"></div>
+      <h1 className="font-prompt text-5xl md:text-7xl text-font-color font-semibold">{title}</h1>
+      <div className="block md:hidden h-1 w-full bg-accent-color"></div>
     </div>
   );
 };
@@ -54,13 +55,25 @@ const Quote = ({quote}) => {
         {/* <p className="text-xs font-prompt font-bold">{author}</p> */}
       </div>
 
-      <div className="mt-16 text-font-color font-light font-prompt text-3xl leading-10">
+      <div className="mt-16 text-font-color font-light font-prompt text-base md:text-3xl leading-normal md:leading-10">
         <p>{quote}</p>
       </div>
 
     </div>
   )
 }
+
+
+const Container = ({children}) => {
+  return (
+    <div style={{
+      gridTemplateRows: "repeat(auto-fit, minmax(0, 1fr))"
+    }}
+      className="w-full md:w-10/12 pr-0 md:pr-8 mr-0 md:mr-16 grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-12">
+      {children}
+    </div>
+  );
+};
 
 
 /*
@@ -106,15 +119,15 @@ const Mem = ({img, name, desi, position, fall}) => {
   }
 
   return (
-    <div className="group w-full h-full">
+    <div className="group flex flex-col w-full h-full">
       <div className={`h-4/5 bg-transparent relative`}>
         <img src={img} alt={name} className="filter grayscale h-full w-full object-cover object-top"/>
         
         <div
           className={`
-            transition-all ease-out duration-700 group-hover:${dir} group-hover:${dim} w-${position.width} h-${position.height}
-            absolute top-${position.top} left-${position.left} bottom-${position.bottom} right-${position.right}
-          `}
+            transition-all ease-out duration-700 group-hover:${dir} group-hover:${dim}
+            `}
+            // absolute top-${position.top} left-${position.left} bottom-${position.bottom} right-${position.right} w-${position.width} h-${position.height}
           style={{
             background: "#EF0000",
             mixBlendMode: "overlay"
@@ -122,13 +135,13 @@ const Mem = ({img, name, desi, position, fall}) => {
         >
         </div>
       </div>
-      <div className="flex justify-between h-1/5 items-center text-font-color font-prompt font-light text-sm">
-        <p className="transform transition-transform ease-out duration-300 origin-top-left group-hover:scale-125 w-1/4 text-left">{name}</p>
-        <p className="transform transition-transform ease-out duration-300 origin-top-right group-hover:scale-125 w-4/12 text-right">{desi}</p>
+      <div className="flex flex-col md:flex-row justify-between h-1/5 items-center text-font-color font-prompt font-light text-sm">
+        <p className="transform transition-transform ease-out duration-300 origin-top-left group-hover:scale-125 w-full md:w-1/4 text-left">{name}</p>
+        <p className="transform transition-transform ease-out duration-300 origin-top-right group-hover:scale-125 w-full md:w-4/12 text-left md:text-right">{desi}</p>
       </div>
     </div>
   );
 }
 
 
-export {Sidenav, Title, Quote, Mem};
+export {Sidenav, Title, Quote, Mem, Container};
