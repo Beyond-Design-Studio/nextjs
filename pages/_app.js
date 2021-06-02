@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="bg-bg-img bg-no-repeat bg-fixed">
 
-      <NavButton classes="p-12 sm:p-20 flex fixed justify-end right-0" />
+      <NavButton classes="p-8 sm:p-20 flex fixed justify-end right-0" />
       
       <Component {...pageProps} />
       

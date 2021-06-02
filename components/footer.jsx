@@ -34,7 +34,7 @@ const Footer = ({ moveSection }) => {
             <div className="hidden sm:block">
               <h2 className="text-4xl lg:text-5xl text-accent-color">Let's Talk</h2>
 
-              <div className="text-xl lg:text-4xl">
+              <div className="text-xl lg:text-3xl xl:text-4xl">
                 <p>beyonddesignstudio@gmail.com</p>
                 <p className="text-base lg:text-3xl">8217393998, 9176645022</p>
               </div>

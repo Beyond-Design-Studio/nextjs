@@ -102,7 +102,7 @@ function WorkDis() {
 
 export default function Work() {
   return (
-    <div className="h-full">
+    <div className="min-h-screen w-ful">
       <h1 className="w-full text-center text-white text-7xl font-prompt font-bold pt-14 relative z-10">
         Our Work
       </h1>

@@ -28,7 +28,7 @@ const Dev = () => {
           />
           <Quote
             author={"Dorthea Lange"}
-            quote={"The camera is a tool that teaches people to see without a camera."}
+            quote={"Linux is only free, if your time has no value."}
           />
           <Mem
             img="/team/alfred.png"
@@ -74,7 +74,7 @@ const Dev = () => {
           />
           <Quote
             author={"Dorthea Lange"}
-            quote={"The camera is a tool that teaches people to see without a camera."}
+            quote={"Without requirements or design, programming is the art of adding bugs to an empty text file."}
           />
         </Container>
       </div>

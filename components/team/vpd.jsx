@@ -26,7 +26,7 @@ const Vpd = () => {
               height: 40
             }}
           />
-          <Mem
+          {/* <Mem
             img="/team/ritul.png"
             name="Vanshika"
             desi="Digital Illustrator"
@@ -39,7 +39,7 @@ const Vpd = () => {
               width: 48,
               height: 28
             }}
-          />
+          /> */}
           <Mem
             img="/team/biratal.png"
             name="Biratal Wagle"

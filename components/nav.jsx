@@ -86,7 +86,7 @@ const Nav = ({ nav, toggleNav }) => {
         </Link>
 
 
-        <Link href="/team">
+        <Link href="/services">
           <a className="pb-7" onClick={() => {toggleNav(false)}}>
             <NavItem
               name={"What we do"}
