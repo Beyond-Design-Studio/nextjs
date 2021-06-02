@@ -6,7 +6,7 @@ const UiUx = () => {
   return (
     <div className="w-full flex flex-col gap-24" id="uiux">
       <Title
-        title={"Leadership"}
+        title={"UI/UX Design"}
         classes=""
       />
 
@@ -22,7 +22,7 @@ const UiUx = () => {
             desi="UX Designer Lead"
             fall="down"
             position={{
-              top: 20,
+              top: 24,
               left: 0,
               right: "auto",
               bottom: "auto",

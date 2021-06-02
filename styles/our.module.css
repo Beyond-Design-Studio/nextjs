@@ -1,44 +1,32 @@
 .container {
-  --anim-delay: 0.9s
+  --anim-delay: 0.9s;
 }
 
 .button {
-  
-}
-
-.content {
-  transition: opacity ease var(--anim-delay);
-  transform: translateX(-12rem);
-  opacity: 0;
-  width: 40rem;
-}
-
-.design {
-  transition: opacity ease var(--anim-delay);
-  transform: translateX(24rem);
-  opacity: 1;
 }
 
 .beyond {
-  transition: opacity ease var(--anim-delay);
-  transform: translateX(9rem);
-  opacity: 1;
+  transform: translate(3rem, -10rem);
+}
+
+.design {
+  transform: translate(14rem, 2rem);
 }
 
 .white-line {
   transition: all ease var(--anim-delay);
-  transform: translate(18rem, 1rem);
+  /* transform: translateX(18rem); */
   opacity: 1;
 }
 
 .title-1 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(2rem);
+  /* transform: translateX(-2rem); */
 }
 
 .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translate(17rem, 1rem);
+  /* transform: translateX(18rem); */
 }
 
 .button svg {
@@ -52,7 +40,12 @@
   opacity: 0;
 }
 
-.container ~ .design {
+.container ~ div {
+  transition: opacity ease var(--anim-delay);
+  opacity: 1;
+}
+
+.design {
   order: -1;
 }
 
@@ -68,18 +61,18 @@
   transition: all ease var(--anim-delay);
 }
 
-.container:hover .white-line {
-  transition: all ease var(--anim-delay);
-  transform: translate(32rem, 1rem);
-  opacity: 0;
-}
-
 .container:hover ~ div {
   transition: opacity ease var(--anim-delay);
-  /* transform: translateY(-8rem); */
   opacity: 0;
 }
 
+.content {
+  transition: opacity ease var(--anim-delay);
+  opacity: 0;
+  width: 85%;
+  transform: translate(0, -5rem);
+  /* width: 40rem; */
+}
 
 .container:hover .content {
   transition: opacity ease var(--anim-delay);
@@ -88,10 +81,111 @@
 
 .container:hover .title-1 {
   transition: transform ease var(--anim-delay);
-  transform: translateX(-24rem);
+  transform: translate(-0.5rem, -5rem);
 }
 
 .container:hover .title-3 {
   transition: transform ease var(--anim-delay);
-  transform: translate(-7rem, -4.3rem);
+  transform: translate(11rem, -8rem);
+}
+
+.container:hover .white-line {
+  transition: all ease var(--anim-delay);
+  transform: translate(10rem, -7.75rem);
+  /* opacity: 0; */
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 0;
+    width: 85%;
+    transform: translate(0, -7rem);
+    /* width: 40rem; */
+  }
+
+  .container:hover .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 1;
+  }
+
+  .container:hover .title-1 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(-6rem, -5rem);
+  }
+
+  .container:hover .title-3 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(10rem, -8.75rem);
+  }
+
+  .container:hover .white-line {
+    transition: all ease var(--anim-delay);
+    transform: translate(6.5rem, -7.5rem);
+    /* opacity: 0; */
+  }
+
+  .beyond {
+    transform: translate(14rem, -10rem);
+  }
+
+  .design {
+    transform: translate(30rem);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  
+  .beyond {
+    transform: translate(20rem, -7rem);
+  }
+
+  .design {
+    transform: translate(40rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 0;
+    /* width: 55%; */
+    width: 40rem;
+    transform: translate(-10rem, 0rem);
+  }
+
+  .container:hover .content {
+    transition: opacity ease var(--anim-delay);
+    opacity: 1;
+  }
+
+  .container:hover .title-1 {
+    transition: transform ease var(--anim-delay);
+    transform: translateX(-24rem);
+  }
+
+  .container:hover .title-2 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(-3.8rem, -4.6rem);
+  }
+
+  .container:hover .title-3 {
+    transition: transform ease var(--anim-delay);
+    transform: translate(-7rem, -4.3rem);
+  }
+
+  .container:hover .white-line {
+    transition: all ease var(--anim-delay);
+    transform: translateX(32rem);
+    opacity: 0;
+  }
+
+  .beyond {
+    transform: translateX(8rem);
+  }
+
+  .design {
+    transform: translateX(24rem);
+  }
 }

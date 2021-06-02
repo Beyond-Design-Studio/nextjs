@@ -44,17 +44,17 @@ const Lead = () => {
             }}
           />
           <Mem
-            img="/team/ritul.png"
+            img="/team/swayam.png"
             name="Swayam Saraogi"
             desi="Chief Design Officer"
-            fall="down"
+            fall="left"
             position={{
-              top: 9,
-              left: 0,
+              top: 0,
+              left: 40,
               right: "auto",
               bottom: "auto",
-              width: 48,
-              height: 28
+              width: 36,
+              height: 56
             }}
           />
           <Mem
