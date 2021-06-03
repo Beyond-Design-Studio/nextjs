@@ -8,10 +8,12 @@ const Footer = ({ moveSectionUp }) => {
     <div id="Footer" className="w-full h-screen flex flex-col justify-end">
 
       <div className="self-end p-8">
-        <svg onClick={moveSectionUp} className="text-font-color" width="70" height="70" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="51.5" cy="51.5" r="49" strokeWidth="5" className="stroke-current" />
-          <path d="M65 60 L50 44 L36 60" className="stroke-current" strokeWidth="5.2" />
-        </svg>
+        <a href="#page">
+          <svg onClick={moveSectionUp} className="text-font-color" width="70" height="70" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="51.5" cy="51.5" r="49" strokeWidth="5" className="stroke-current" />
+            <path d="M65 60 L50 44 L36 60" className="stroke-current" strokeWidth="5.2" />
+          </svg>
+        </a>
       </div>
 
 
@@ -20,8 +22,8 @@ const Footer = ({ moveSectionUp }) => {
         <div className="block sm:hidden text-center">
           <h2 className="text-3xl lg:text-5xl text-accent-color">Let's Talk</h2>
 
-          <div className="text-xl sm:text-4xl">
-            <p>beyonddesignstudio@gmail.com</p>
+          <div className="text-xl sm:text-3xl">
+            <p>designthefuture@beyonddesignstudio.com</p>
             <p className="text-lg sm:text-3xl">8217393998, 9176645022</p>
           </div>
         </div>
@@ -32,24 +34,24 @@ const Footer = ({ moveSectionUp }) => {
             <div className="hidden sm:block">
               <h2 className="text-4xl lg:text-5xl text-accent-color">Let's Talk</h2>
 
-              <div className="text-xl lg:text-3xl xl:text-4xl">
-                <p>beyonddesignstudio@gmail.com</p>
+              <div className="text-xl lg:text-3xl xl:text-3xl">
+                <p>designthefuture@beyonddesignstudio.com</p>
                 <p className="text-base lg:text-3xl">8217393998, 9176645022</p>
               </div>
             </div>
 
             <p className="flex flex-col gap-2 sm:gap-0 text-2xl lg:text-4xl">
               <Link href="/">
-                <a>Home</a>              
+                <a>Home</a>
               </Link>
               <Link href="/services">
-                <a>What We Do</a>              
+                <a>What We Do</a>
               </Link>
               <Link href="/work">
-                <a>Work</a>              
+                <a>Work</a>
               </Link>
               <Link href="/team">
-                <a>Our Team</a>              
+                <a>Our Team</a>
               </Link>
             </p>
           </div>
@@ -65,26 +67,22 @@ const Footer = ({ moveSectionUp }) => {
 
             <div className="hidden sm:flex gap-2 sm:gap-4">
               {/* Behance */}
-              <img width="50" height="50" src="/icons8-behance.svg" alt="Behance Logo" />
+              <img className="hidden" width="50" height="50" src="/icons8-behance.svg" alt="Behance Logo" />
 
               {/* Instagram */}
-              <img width="50" height="50" src="/icons8-instagram.svg" alt="Instagram Logo" />
-
+              <a target="_blanck" href="https://www.instagram.com/beyondesignstudio/"><img width="50" height="50" src="/icons8-instagram.svg" alt="Instagram Logo" /></a>
               {/* Linkedin */}
-              <img width="50" height="50" src="/icons8-linkedin.svg" alt="Instagram Logo" />
-
+              <a target="_blanck" href="https://www.linkedin.com/company/beyond-design-studio/mycompany/?viewAsMember=true"> <img width="50" height="50" src="/icons8-linkedin.svg" alt="Instagram Logo" /></a>
             </div>
 
             <div className="flex sm:hidden gap-2 sm:gap-4">
               {/* Behance */}
-              <img width="30" height="30" src="/icons8-behance.svg" alt="Behance Logo" />
+              <img className="hidden" width="30" height="30" src="/icons8-behance.svg" alt="Behance Logo" />
 
               {/* Instagram */}
-              <img width="30" height="30" src="/icons8-instagram.svg" alt="Instagram Logo" />
-
+              <a target="_blanck" href="https://www.instagram.com/beyondesignstudio/"> <img width="30" height="30" src="/icons8-instagram.svg" alt="Instagram Logo" /></a>
               {/* Linkedin */}
-              <img width="30" height="30" src="/icons8-linkedin.svg" alt="Instagram Logo" />
-
+              <a target="_blanck" href="https://www.linkedin.com/company/beyond-design-studio/mycompany/?viewAsMember=true"> <img width="30" height="30" src="/icons8-linkedin.svg" alt="Instagram Logo" /></a>
             </div>
 
           </div>

@@ -78,10 +78,12 @@ function ServDis() {
       <div>
         <h1 className="w-full text-white text-5xl font-prompt font-light mt-52 text-center relative">
           Allow us to Elevate your Brand
-      </h1>
-        <button className="bg-accent-color w-36 h-12 rounded-xl text-white focus:outline-none text-lg relative left-1/2 transform -translate-x-1/2 mt-10 mb-32">
-          Talk To Us
-      </button>
+        </h1>
+        <a href="#Footer">
+          <button className="bg-accent-color w-36 h-12 rounded-xl text-white focus:outline-none text-lg relative left-1/2 transform -translate-x-1/2 mt-10 mb-32">
+            Talk To Us
+          </button>
+        </a>
       </div>
     </div>
   );

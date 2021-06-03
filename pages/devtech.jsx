@@ -112,17 +112,17 @@ function Frameworks() {
         <img src="dev-leftborder.svg" className="self-start w-20 -mt-20" />
         <div>
           <div className="flex justify-center flex-wrap mb-20">
-            <img className="w-72 mx-10 xl:mt-0 mt-10" src="dev-angular.svg" />
-            <img className="w-72 mx-10 xl:mt-0 mt-10" src="dev-node.svg" />
-            <img className="w-72 mx-10 xl:mt-0 mt-10" src="dev-react.svg" />
+            <img className="w-72 mx-8 xl:mt-0 mt-10" src="dev-angular.svg" />
+            <img className="w-72 mx-8 xl:mt-0 mt-10" src="dev-node.svg" />
+            <img className="w-72 mx-8 xl:mt-0 mt-10" src="dev-react.svg" />
           </div>
           <div className="flex flex-wrap justify-center xl:mt-0 -mt-20">
             <img
-              className="w-72 mx-10 xl:mt-0 mt-10"
+              className="w-72 mx-8 xl:mt-0 mt-10"
               src="dev-reactnative.svg"
             />
-            <img className="w-72 mx-10 xl:mt-0 mt-10" src="dev-next.svg" />
-            <img className="w-72 mx-10 xl:mt-0 mt-10" src="dev-flutter.svg" />
+            <img className="w-72 mx-8 xl:mt-0 mt-10" src="dev-next.svg" />
+            <img className="w-72 mx-8 xl:mt-0 mt-10" src="dev-flutter.svg" />
           </div>
         </div>
         <img src="dev-rightborder.svg" className="self-end w-20 -mb-20" />
@@ -184,9 +184,11 @@ export default function DevTech() {
         <h1 className="w-full text-white text-7xl font-prompt font-bold mt-52 text-center relative">
           Let's Build!
         </h1>
-        <button className="bg-accent-color w-36 h-12 rounded-xl text-white focus:outline-none text-lg relative left-1/2 transform -translate-x-1/2 mt-10">
-          Talk To Us
+        <a href="#Footer">
+          <button className="bg-accent-color w-36 h-12 rounded-xl text-white focus:outline-none text-lg relative left-1/2 transform -translate-x-1/2 mt-10">
+            Talk To Us
         </button>
+        </a>
       </div>
     </div>
   );
