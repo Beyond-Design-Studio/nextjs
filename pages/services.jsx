@@ -11,18 +11,21 @@ function ServDis() {
       image: "services-visual.svg",
       description:
         "We look to translate thought into reality and use visuals, typography and creative artistry to achieve the same. All aspects of your brand, from logos to websites, business cards to social media content are carefully crafted to enhance your brand’s image. We also customize posters and design products from scratch allowing for innovation and originality to take flight.",
+      link: "/",
     },
     {
       title: "User Experience Design",
       image: "services-uexd.svg",
       description:
         "We design user centered interfaces for software and apps by conducting thorough UX research and mapping user experiences. We aim to connect business goals to user needs by defining product strategy through research, testing and refinement.  The design elements of a product or service are in sync to ensure the conversation between the user and the product is enjoyable, smooth and memorable",
+      link: "/",
     },
     {
       title: "Development and Tech",
       image: "services-devtech.svg",
       description:
         "We bring your fascinating ideas from a scintillating design to a full fledged working application using the latest tech stacks to give your product the best possible performance.",
+      link: "/devtech",
     },
   ];
 
@@ -44,23 +47,25 @@ function ServDis() {
                 <p className="text-base sm:text-lg font-light sm:font-normal text-white mt-6 w-full">
                   {item.description}
                 </p>
-                <Link href="/devtech">
-                  <a>
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 54 54"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="relative left-1/2 transform -translate-x-1/2 mt-8"
-                    >
-                      <path
-                        d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                </Link>
+                {
+                  index === 2 && <Link href={item.link}>
+                    <a>
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 54 54"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative left-1/2 transform -translate-x-1/2 mt-8"
+                      >
+                        <path
+                          d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </Link>
+                }
               </div>
             </div>
             <div className="flex-1">

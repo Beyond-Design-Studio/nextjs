@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = ({ moveSectionUp }) => {
 
   return (
-    <div className="w-full h-screen flex flex-col justify-end">
+    <div id="Footer" className="w-full h-screen flex flex-col justify-end">
 
       <div className="self-end p-8">
         <svg onClick={moveSectionUp} className="text-font-color" width="70" height="70" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">

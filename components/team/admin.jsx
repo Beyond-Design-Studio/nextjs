@@ -13,7 +13,7 @@ const Admin = () => {
       <div className="w-full flex justify-end">
         <Container>
           <Mem
-            img="/team/ritul.png"
+            img="/team/rochan.png"
             name="Rochan Mohapatra"
             desi="Head of Operations and Logistics"
             fall="down"
@@ -29,7 +29,7 @@ const Admin = () => {
           
           <Quote
             author={"Paul Caponigro"}
-            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+            quote={"Either you run the day or the day runs by you. We make sure we’re faster."}
           />
           
           <Mem
@@ -77,14 +77,24 @@ const Admin = () => {
             }}
           />
 
-          <Quote
-            author={"Paul Caponigro"}
-            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+          <Mem
+            img="/team/aditya.png"
+            name="Aditya Phalod"
+            desi="Social Media Marketer"
+            fall="down"
+            position={{
+              top: 9,
+              left: 0,
+              right: "auto",
+              bottom: "auto",
+              width: 56,
+              height: 44
+            }}
           />
 
           <Quote
             author={"Paul Caponigro"}
-            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+            quote={"When you have creative minds, you see innovation anywhere."}
           />
           <Mem
             img="/team/oishiki.png"

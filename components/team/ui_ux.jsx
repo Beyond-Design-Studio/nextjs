@@ -14,7 +14,7 @@ const UiUx = () => {
         <Container>
           <Quote
             author={"Paul Caponigro"}
-            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+            quote={"Every single design decision we make is a product of discussion, deliberation and design thinking."}
           />
           <Mem
             img="/team/stuti.png"

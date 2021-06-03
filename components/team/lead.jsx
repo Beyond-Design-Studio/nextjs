@@ -73,7 +73,7 @@ const Lead = () => {
           />
           <Quote
             author={"Paul Caponigro"}
-            quote={"It’s one thing to get an idea of how a person looks, another thing is to make a portrait of who he is."}
+            quote={"Watching design evolve inspires us to dream big. Our commitment to realising the dream drives us to lead."}
           />
           <Mem
             img="/team/aarav.png"

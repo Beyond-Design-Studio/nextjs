@@ -35,7 +35,7 @@ const HomeData = [
             second={"Team"}
             re={"Team"}
             link={"/team"}
-            content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."} />
+            content={"We are a dynamic team of designers specialising in UI/UX, development and visual design. We work closely to ensure that the designs we make strengthen your brand image. We are a one stop for all your design needs, you needn’t look further."} />
     }
     ,
     {

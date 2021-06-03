@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Footer from "../components/footer";
 import NavButton from "../components/nav";
-import "./override.css"
+import "../styles/override.css"
 
 
 function MyApp({ Component, pageProps }) {
