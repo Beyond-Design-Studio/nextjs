@@ -34,7 +34,7 @@ const HomeData = [
         component: <Our
             second={"Team"}
             re={"Team"}
-            link={"/"}
+            link={"/team"}
             content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."} />
     }
     ,
@@ -43,7 +43,7 @@ const HomeData = [
         component: <Our
             second={"Work"}
             re={"Projects"}
-            link={"/"}
+            link={"/work"}
             content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
         />
     },
