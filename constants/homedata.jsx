@@ -15,6 +15,10 @@ const moveSectionUp = () => {
     fullpage_api.moveTo(1, 0);
 }
 
+const moveToFooter = () => {
+    fullpage_api.moveTo(7, 0);
+}
+
 const HomeData = [
     {
         text: "Section Landing",
@@ -67,7 +71,7 @@ const HomeData = [
     ,
     {
         text: "Setion Create",
-        component: <Create />
+        component: <Create moveToFooter={moveToFooter} />
     },
     {
         text: "Section Footer",
