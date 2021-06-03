@@ -4,7 +4,6 @@ import Head from 'next/head'
 
 import HomeData from '../constants/homedata'
 
-
 /*
   * All the component imports are stored in /constants/HomeData.jsx
   * Using all those components to initialize fullpages 
@@ -24,7 +23,6 @@ const App = () => {
       <ReactFullpage
         navigation
         licenseKey={" B399F471-9FF141B5-BD62B82F-DA63B84D "}
-        // continuousVertical={true}
         dragAndMove={"fingersonly"}
         parallax={true}
         render={comp =>
