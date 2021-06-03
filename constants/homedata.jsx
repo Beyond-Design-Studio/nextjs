@@ -44,7 +44,7 @@ const HomeData = [
             second={"Work"}
             re={"Projects"}
             link={"/work"}
-            content={"We aim to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant."}
+            content={"We go the extra mile to offer the best possible solutions because your brand deserves it. Having worked with clients from different fields and of different sizes we have the knack in understanding various business models and working closely with the client team."}
         />
     },
     {
