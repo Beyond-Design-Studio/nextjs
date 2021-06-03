@@ -2,7 +2,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 
-const Footer = ({ moveSection }) => {
+const Footer = ({ moveSectionUp }) => {
 
   const isMobile = useMediaQuery({ query: "(min-width: 640px)" });
 
@@ -10,7 +10,7 @@ const Footer = ({ moveSection }) => {
     <div className="w-full h-screen flex flex-col justify-end">
 
       <div className="self-end p-8">
-        <svg onClick={() => { moveSection; console.log("as") }} className="text-font-color" width="70" height="70" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg onClick={moveSectionUp} className="text-font-color" width="70" height="70" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="51.5" cy="51.5" r="49" strokeWidth="5" className="stroke-current" />
           <path d="M65 60 L50 44 L36 60" className="stroke-current" strokeWidth="5.2" />
         </svg>
@@ -84,7 +84,7 @@ const Footer = ({ moveSection }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

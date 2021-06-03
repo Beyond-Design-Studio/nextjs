@@ -14,10 +14,6 @@ import HomeData from '../constants/homedata'
 const App = () => {
   const [fullpages, setFullpage] = useState(HomeData);
 
-  const onLeave = (origin, destination, direction) => {
-    console.log("onLeave", { origin, destination, direction });
-  }
-
   return (
     <div className="flex flex-col">
       {/* SEO */}
@@ -27,7 +23,10 @@ const App = () => {
 
       <ReactFullpage
         navigation
-        onLeave={onLeave}
+        licenseKey={" B399F471-9FF141B5-BD62B82F-DA63B84D "}
+        // continuousVertical={true}
+        dragAndMove={"fingersonly"}
+        parallax={true}
         render={comp =>
           console.log("render prop change") || (
             <ReactFullpage.Wrapper>
