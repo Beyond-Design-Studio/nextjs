@@ -13,7 +13,7 @@ const Team = () => {
     <div className="w-full min-h-screen">
 
       <Head>
-        <title>Beyond Design Studio Team</title>
+        <title>Meet Our Team</title>
       </Head>
 
       <div className="flex h-full">

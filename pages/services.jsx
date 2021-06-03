@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import styles from "../styles/misc.module.css";
 
 function ServDis() {
@@ -78,6 +79,11 @@ function ServDis() {
 export default function Services() {
   return (
     <div className="min-h-screen w-full pl-4 md:pl-8 lg:pl-24">
+
+      <Head>
+        <title>Our Services</title>
+      </Head>
+
       <h1 className="text-white text-5xl sm:text-7xl font-prompt font-bold pt-24 mb-32">
         Our Services
       </h1>

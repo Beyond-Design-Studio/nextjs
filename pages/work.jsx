@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import styles from "../styles/misc.module.css"
 
 function WorkDis() {
@@ -82,6 +83,11 @@ function WorkDis() {
 export default function Work() {
   return (
     <div className="min-h-screen w-ful">
+
+      <Head>
+        <title>Our Work | Portfolio</title>
+      </Head>
+
       <h1 className="w-full text-center text-white text-5xl lg:text-7xl font-prompt font-bold py-14 relative z-10">
         Our Work
       </h1>
