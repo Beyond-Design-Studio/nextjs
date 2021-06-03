@@ -37,7 +37,7 @@ function Box1() {
               <h1 className="text-3xl text-accent-color font-semibold">
                 {item.title}
               </h1>
-              <img className="w-16" src={item.image} />
+              <img className="w-16 h-20" src={item.image} />
             </div>
             <p className="text-white font-productsans">{item.description}</p>
           </div>
