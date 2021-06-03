@@ -135,9 +135,9 @@ const Mem = ({img, name, desi, position, fall}) => {
         >
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between h-1/5 items-center text-font-color font-prompt font-light text-sm">
-        <p className="transform transition-transform ease-out duration-300 origin-top-left group-hover:scale-125 w-full md:w-1/4 text-left">{name}</p>
-        <p className="transform transition-transform ease-out duration-300 origin-top-right group-hover:scale-125 md:w-4/12 text-left md:text-right">{desi}</p>
+      <div className="flex flex-col md:flex-row justify-start md:justify-between h-1/5 items-center text-font-color font-prompt font-light text-sm">
+        <p className="transform transition-transform ease-out duration-300 origin-top-left group-hover:scale-125 font-normal md:font-light w-full md:w-1/4 text-left">{name}</p>
+        <p className="transform transition-transform ease-out duration-300 origin-top-right group-hover:scale-125 w-full md:w-4/12 text-left md:text-right">{desi}</p>
       </div>
     </div>
   );

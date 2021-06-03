@@ -58,17 +58,17 @@ const Lead = () => {
             }}
           />
           <Mem
-            img="/team/ritul.png"
+            img="/team/spatika.png"
             name="Spatikkaa Veddmurthy"
             desi="Chief Operations Officer"
             fall="down"
             position={{
-              top: 9,
+              top: 24,
               left: 0,
               right: "auto",
               bottom: "auto",
-              width: 48,
-              height: 28
+              width: 56,
+              height: 44
             }}
           />
           <Quote

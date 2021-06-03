@@ -13,17 +13,17 @@ const Dev = () => {
       <div className="w-full flex justify-end">
         <Container>
           <Mem
-            img="/team/ritul.png"
+            img="/team/arg.jpg"
             name="Argha Chakrabarty"
             desi="Web Developer"
-            fall="down"
+            fall="right"
             position={{
-              top: 9,
-              left: 0,
-              right: "auto",
+              top: 0,
+              left: "auto",
+              right: 16,
               bottom: "auto",
-              width: 64,
-              height: 28
+              width: 40,
+              height: 52
             }}
           />
           <Quote

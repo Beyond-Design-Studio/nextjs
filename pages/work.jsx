@@ -86,6 +86,7 @@ export default function Work() {
 
       <Head>
         <title>Our Work | Portfolio</title>
+        <meta name="description" content="We have worked with numerous industry clients over the course of time. Our work with an agro business made us use Shopify and we went on to score an AMC as well. This led us to working with a marketing and advertising firm where they wanted us to build a website for their brand. This brand had dynamic blogs, videos, photos, news, events which required us to build a dedicated control panel as well which was hosted on netlify, free of cost. We have also worked with budding entrepreneurs to make their dreams a reality and have much experience with building community products and social media platforms. " />
       </Head>
 
       <h1 className="w-full text-center text-white text-5xl lg:text-7xl font-prompt font-bold py-14 relative z-10">
