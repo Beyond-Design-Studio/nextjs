@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/misc.module.css"
 
 function WorkDis() {
   const info = [
@@ -40,61 +41,39 @@ function WorkDis() {
   ];
 
   return (
-    <div className="w-full z-20 -mb-52">
+    <div className={`w-full ${styles.cont}`}>
       {info.map((item, index) => {
-        return index % 2 == 0 ? (
+        return (
           <div
             key={index}
-            className="w-full flex justify-between items-center z-10 relative mb-36"
+            className="gap-16 flex flex-col lg:flex-row justify-between items-center mb-36"
           >
-            <div className="w-5/12">
-              <div className="w-6/12">
-                <h1 className="font-roboto text-white font-medium text-5xl w-auto ml-32">
-                  {item.title}
-                </h1>
-                <div className="w-5/12 h-1 mt-2 border-b-8 border-solid border-accent-color ml-32"></div>
-              </div>
-              <div className="w-10/12 mt-24 bg-red-900 bg-opacity-20 ml-24 pb-8 pt-8">
-                <div className="w-8/12 border-t-2 border-solid border-accent-color ml-6"></div>
-                <p className="text-accent-color w-3/12 text-lg ml-10 mt-2 font-bold">
-                  {item.subtitle}
-                </p>
-                <p className="text-2xl text-white w-8/12 ml-10 mt-6">
-                  {item.description}
-                </p>
-              </div>
+            <div className="flex-1">
+              <img className="object-fill z-10 relative rounded-3xl" src={item.image} />
             </div>
-            <div className="w-5/12 mr-32">
-              <img className="object-fill rounded-3xl" src={item.image} />
-            </div>
-          </div>
-        ) : (
-          <div
-            key={index}
-            className="w-full flex justify-between items-center z-20 relative mb-36"
-          >
-            <div className="w-5/12 ml-20">
-              <img className="object-fill rounded-3xl" src={item.image} />
-            </div>
-            <div className="w-5/12">
-              <div className="w-6/12 flex flex-col items-end ml-20">
-                <h1 className="font-roboto text-white font-medium text-5xl w-auto text-right">
+            
+            <div className={`flex-1 flex flex-col gap-24`}>
+              <div className={`w-10/12 flex flex-col items-start ${index % 2 !== 0 ? "lg:items-end" : "lg:items-start"} ` }>
+                <h1 className={`font-roboto text-white text-left ${index % 2 !== 0 ? "lg:text-right" : "lg:text-left" } justify-end font-medium text-5xl w-1/2` }>
                   {item.title}
                 </h1>
                 <div className="w-5/12 h-1 mt-2 border-b-8 border-solid border-accent-color"></div>
               </div>
-              <div className="w-10/12 mt-24 bg-red-900 bg-opacity-20 pb-8 pt-8">
-                <div className="w-8/12 border-t-2 border-solid border-accent-color ml-24"></div>
-                <p className="text-accent-color w-3/12 text-lg ml-32 mt-2 font-bold">
-                  {item.subtitle}
-                </p>
-                <p className="text-2xl text-white w-8/12 ml-32 mt-6">
-                  {item.description}
-                </p>
+              <div style={{ backgroundColor: "#231D1D"}} className={`w-full lg:w-10/12 p-8 flex justify-start ${index % 2 !== 0 ? "lg:justify-end" : "lg:justify-start"}`}>
+                <div className="w-full lg:w-9/12">
+                  <div className="border-t-2 border-solid border-accent-color"></div>
+                  <p className="text-accent-color text-lg font-bold pb-4">
+                    {item.subtitle}
+                  </p>
+                  <p className="text-2xl text-white">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
+            
           </div>
-        );
+        )
       })}
     </div>
   );
@@ -103,11 +82,13 @@ function WorkDis() {
 export default function Work() {
   return (
     <div className="min-h-screen w-ful">
-      <h1 className="w-full text-center text-white text-7xl font-prompt font-bold pt-14 relative z-10">
+      <h1 className="w-full text-center text-white text-5xl lg:text-7xl font-prompt font-bold py-14 relative z-10">
         Our Work
       </h1>
-      <WorkDis />
-      <div className="md:w-72 md:h-full md:bg-red-800 md:fixed md:top-0 md:left-1/2 md:transform md:-translate-x-1/2 md:z-0 md:opacity-95 hidden md:block"></div>
+      <div className="px-12 lg:px-24">
+        <WorkDis />
+      </div>
+      <div className="md:w-72 md:h-full md:bg-accent-color md:fixed md:top-0 md:left-1/2 md:transform md:-translate-x-1/2 md:z-0 md:opacity-50 hidden md:block"></div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ const Footer = ({ moveSection }) => {
 
 
 
-      <div style={{ backgroundColor: "#E6E6E6" }} className="py-8 px-8 pr-10 w-full h-3/5 flex flex-col justify-between z-10">
+      <div style={{ backgroundColor: "#E6E6E6" }} className="py-8 px-2 sm:px-8 sm:pr-10 w-full h-3/5 flex flex-col justify-between z-10">
         <div className="block sm:hidden text-center">
           <h2 className="text-3xl lg:text-5xl text-accent-color">Let's Talk</h2>
 

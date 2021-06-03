@@ -4,7 +4,12 @@
 
 
 @media only screen and (min-width: 1024px) {
-  .cont div:nth-child(2n + 1) {
+  .cont > div:nth-child(2n + 1) {
     flex-direction: row-reverse;
+  }
+
+  .red {
+    align-items: flex-end;
+    text-align: right;
   }
 }

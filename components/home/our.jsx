@@ -28,8 +28,15 @@ const Our = ({second, content, re, link}) => {
               {content}
               <Link href={link}>
                 <a className="self-center">
-                  <div className={`flex self-center items-center ${styles["button"]}`}>
+                  <div className={`hidden lg:flex self-center items-center ${styles["button"]}`}>
                     <svg width="45" height="45" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z" fill="white" />
+                    </svg>
+                    <p>{re}</p>
+                  </div>
+
+                  <div className={`flex lg:hidden gap-2 self-center items-center`}>
+                    <svg width="30" height="30" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M31.5371 5.37401L28.9208 7.99031L45.8355 24.905L1.84462 24.3185L1.89447 28.0573L45.8854 28.6438L29.4158 45.1134L32.1028 47.8004L53.0331 26.8701L31.5371 5.37401Z" fill="white" />
                     </svg>
                     <p>{re}</p>
