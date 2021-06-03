@@ -54,16 +54,20 @@ function HeadlessCMS() {
         Headless CMS
       </h1>
       {/* below div will have the border */}
-      <div>
-        <div className="flex justify-center flex-wrap mb-20">
-          <img className="w-72 mx-10" src="dev-contentful.svg" />
-          <img className="w-72 mx-10" src="dev-netlify.svg" />
-          <img className="w-72 mx-10" src="dev-tinacms.svg" />
+      <div className="flex justify-between w-10/12 relative left-1/2 transform -translate-x-1/2">
+        <img src="dev-leftborder.svg" className="self-start w-20 -mt-20" />
+        <div>
+          <div className="flex justify-center flex-wrap mb-20">
+            <img className="w-72 mx-10" src="dev-contentful.svg" />
+            <img className="w-72 mx-10" src="dev-netlify.svg" />
+            <img className="w-72 mx-10" src="dev-tinacms.svg" />
+          </div>
+          <div className="flex justify-center">
+            <img className="w-72 mx-10" src="dev-storyblok.svg" />
+            <img className="w-72 mx-10" src="dev-wordpress.svg" />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <img className="w-72 mx-10" src="dev-storyblok.svg" />
-          <img className="w-72 mx-10" src="dev-wordpress.svg" />
-        </div>
+        <img src="dev-rightborder.svg" className="self-end w-20 -mb-20" />
       </div>
     </div>
   );
@@ -76,15 +80,19 @@ function TraditionalCMS() {
         Traditional CMS
       </h1>
       {/* below div will have the border */}
-      <div>
-        <div className="flex justify-center flex-wrap mb-20">
-          <img className="w-72 mx-10" src="dev-webflow.svg" />
-          <img className="w-72 mx-10" src="dev-shopify.svg" />
+      <div className="flex justify-between w-10/12 relative left-1/2 transform -translate-x-1/2">
+        <img src="dev-leftborder.svg" className="self-start w-20 -mt-20" />
+        <div>
+          <div className="flex justify-center flex-wrap mb-20">
+            <img className="w-72 mx-10" src="dev-webflow.svg" />
+            <img className="w-72 mx-10" src="dev-shopify.svg" />
+          </div>
+          <div className="flex justify-center">
+            <img className="w-72 mx-10" src="dev-wix.svg" />
+            <img className="w-72 mx-10" src="dev-wordpress.svg" />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <img className="w-72 mx-10" src="dev-wix.svg" />
-          <img className="w-72 mx-10" src="dev-wordpress.svg" />
-        </div>
+        <img src="dev-rightborder.svg" className="self-end w-20 -mb-20" />
       </div>
     </div>
   );
@@ -97,17 +105,21 @@ function Frameworks() {
         Frameworks
       </h1>
       {/* below div will have the border */}
-      <div>
-        <div className="flex justify-center flex-wrap mb-20">
-          <img className="w-72 mx-10" src="dev-angular.svg" />
-          <img className="w-72 mx-10" src="dev-node.svg" />
-          <img className="w-72 mx-10" src="dev-react.svg" />
+      <div className="flex justify-between w-10/12 relative left-1/2 transform -translate-x-1/2">
+        <img src="dev-leftborder.svg" className="self-start w-20 -mt-20" />
+        <div>
+          <div className="flex justify-center flex-wrap mb-20">
+            <img className="w-72 mx-10" src="dev-angular.svg" />
+            <img className="w-72 mx-10" src="dev-node.svg" />
+            <img className="w-72 mx-10" src="dev-react.svg" />
+          </div>
+          <div className="flex justify-center">
+            <img className="w-72 mx-10" src="dev-reactnative.svg" />
+            <img className="w-72 mx-10" src="dev-next.svg" />
+            <img className="w-72 mx-10" src="dev-flutter.svg" />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <img className="w-72 mx-10" src="dev-reactnative.svg" />
-          <img className="w-72 mx-10" src="dev-next.svg" />
-          <img className="w-72 mx-10" src="dev-flutter.svg" />
-        </div>
+        <img src="dev-rightborder.svg" className="self-end w-20 -mb-20" />
       </div>
     </div>
   );
@@ -120,15 +132,19 @@ function Deployment() {
         Deployment
       </h1>
       {/* below div will have the border */}
-      <div>
-        <div className="flex justify-center flex-wrap mb-20">
-          <img className="w-72 mx-10" src="dev-firebase.svg" />
-          <img className="w-72 mx-10" src="dev-vercel.svg" />
+      <div className="flex justify-between w-10/12 relative left-1/2 transform -translate-x-1/2">
+        <img src="dev-leftborder.svg" className="self-start w-20 -mt-20" />
+        <div>
+          <div className="flex justify-center flex-wrap mb-20">
+            <img className="w-72 mx-10" src="dev-firebase.svg" />
+            <img className="w-72 mx-10" src="dev-vercel.svg" />
+          </div>
+          <div className="flex justify-center">
+            <img className="w-72 mx-10" src="dev-aws.svg" />
+            <img className="w-72 mx-10" src="dev-netlify.svg" />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <img className="w-72 mx-10" src="dev-aws.svg" />
-          <img className="w-72 mx-10" src="dev-netlify.svg" />
-        </div>
+        <img src="dev-rightborder.svg" className="self-end w-20 -mb-20" />
       </div>
     </div>
   );
