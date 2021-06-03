@@ -4,7 +4,6 @@ import Head from 'next/head'
 
 import HomeData from '../constants/homedata'
 
-
 /*
   * All the component imports are stored in /constants/HomeData.jsx
   * Using all those components to initialize fullpages 
@@ -13,10 +12,6 @@ import HomeData from '../constants/homedata'
 
 const App = () => {
   const [fullpages, setFullpage] = useState(HomeData);
-
-  const onLeave = (origin, destination, direction) => {
-    console.log("onLeave", { origin, destination, direction });
-  }
 
   return (
     <div className="flex flex-col">
@@ -27,7 +22,9 @@ const App = () => {
 
       <ReactFullpage
         navigation
-        onLeave={onLeave}
+        licenseKey={" B399F471-9FF141B5-BD62B82F-DA63B84D "}
+        dragAndMove={"fingersonly"}
+        parallax={true}
         render={comp =>
           console.log("render prop change") || (
             <ReactFullpage.Wrapper>

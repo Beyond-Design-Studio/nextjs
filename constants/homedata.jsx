@@ -11,9 +11,12 @@ const moveSectionDown = () => {
     fullpage_api.moveSectionDown();
 }
 
-const moveSection = () => {
-    console.log("Here for Scroll")
-    fullpage_api.moveSectionUp();
+const moveSectionUp = () => {
+    fullpage_api.moveTo(1, 0);
+}
+
+const moveToFooter = () => {
+    fullpage_api.moveTo(7, 0);
 }
 
 const HomeData = [
@@ -68,11 +71,11 @@ const HomeData = [
     ,
     {
         text: "Setion Create",
-        component: <Create />
+        component: <Create moveToFooter={moveToFooter} />
     },
     {
         text: "Section Footer",
-        component: <Footer moveSection={moveSection} />
+        component: <Footer moveSectionUp={moveSectionUp} />
     }
 ]
 
