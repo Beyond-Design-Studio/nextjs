@@ -1,48 +1,62 @@
-.lineone {
-  transition: all ease-in 0.15s;
-  width: 50px;
-  x: 0;
+.arrow {
+  --anim-delay: 2.5s
 }
 
-.linetwo {
-  transition: all ease-in 0.15s;
-  width: 25px;
-  x: 25px;
+@keyframes in-out {
+  from {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.2;
+  }
 }
 
-.ham:hover .lineone {
-  transition: all ease-in 0.15s;
-  width: 25px;
-  x: 25px;
+@keyframes upper {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-.ham:hover .linetwo {
-  transition: all ease-in 0.15s;
-  width: 50px;
-  x: 0;
+@keyframes middle {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-.hiddenPath,
-.upperPath,
+
+.upperPath {
+  animation: upper var(--anim-delay);
+  animation-iteration-count: infinite;
+}
+
+.middlePath {
+  animation: middle var(--anim-delay);
+  animation-iteration-count: infinite;
+}
+
 .lowerPath {
-  transition: all ease 0.35s;
+  animation: in-out var(--anim-delay);
+  animation-iteration-count: infinite;
 }
 
-.hiddenPath {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.arrow:hover .lowerPath {
-  transform: translateY(65%);
-  opacity: 0;
-}
-
-.arrow:hover .upperPath {
-  transform: translateY(40%);
-}
-
-.arrow:hover .hiddenPath {
-  transform: translateY(0);
-  opacity: 1;
-}

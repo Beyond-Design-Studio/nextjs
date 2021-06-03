@@ -35,7 +35,7 @@ const WhatWeDo = ({ content }) => {
                     <p>Services</p>
                   </a>
                 </Link> */}
-                <Link href="/">
+                <Link href="/services">
                   <a className="self-center">
                     <div className={`hidden lg:flex self-center items-center ${styles["button"]}`}>
                       <svg width="45" height="45" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">

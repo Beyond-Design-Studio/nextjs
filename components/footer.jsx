@@ -1,10 +1,8 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
 
 
 const Footer = ({ moveSection }) => {
-
-  const isMobile = useMediaQuery({ query: "(min-width: 640px)" });
 
   return (
     <div className="w-full h-screen flex flex-col justify-end">
@@ -41,10 +39,18 @@ const Footer = ({ moveSection }) => {
             </div>
 
             <p className="flex flex-col gap-2 sm:gap-0 text-2xl lg:text-4xl">
-              <p>Home</p>
-              <p>What We Do</p>
-              <p>Work</p>
-              <p>Our Team</p>
+              <Link href="/">
+                <a>Home</a>              
+              </Link>
+              <Link href="/services">
+                <a>What We Do</a>              
+              </Link>
+              <Link href="/work">
+                <a>Work</a>              
+              </Link>
+              <Link href="/team">
+                <a>Our Team</a>              
+              </Link>
             </p>
           </div>
 

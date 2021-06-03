@@ -65,14 +65,14 @@ const Vpd = () => {
               img="/team/bear.png"
               name="Join Us"
               desi="All Positions Open"
-              fall="down"
+              fall="right"
               position={{
-                top: 9,
+                top: 0,
                 left: "auto",
-                right: 0,
+                right: 64,
                 bottom: "auto",
-                width: 56,
-                height: 32
+                width: 36,
+                height: 40
               }}
             />
           </div>

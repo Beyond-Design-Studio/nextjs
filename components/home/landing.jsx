@@ -19,11 +19,18 @@ const Landing = ({ moveSectionDown }) => {
       </div>
 
       <div className="w-full flex justify-center" onClick={moveSectionDown}>
-        <svg className={`${styles.arrow} self-center justify-self-center`} width="50" height="47" viewBox="0 0 66 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg className={`${styles.arrow} self-center justify-self-center`} width="50" height="47" viewBox="0 0 66 62" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path className={styles.upperPath}  d="M2 2  L33 26 L64 2 " stroke="#F3F3F3" strokeWidth="4" />
           <path className={styles.middlePath} d="M2 20 L33 44 L64 20" stroke="#F3F3F3" strokeWidth="4" />
           <path className={styles.lowerPath}  d="M2 36 L33 60 L64 36" stroke="#F3F3F3" strokeWidth="4" />
+        </svg> */}
+        <svg className={`${styles.arrow}`} width="48" height="50" viewBox="0 0 66 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path className={styles.upperPath}  d="M2 2  L33 26 L64 2 " stroke="#F3F3F3" stroke-width="4" />
+          <path className={styles.middlePath} d="M2 22 L33 46 L64 22" stroke="#F3F3F3" stroke-width="4" />
+          <path className={styles.lowerPath}  d="M2 42 L33 66 L64 42" stroke="#F3F3F3" stroke-width="4" />
         </svg>
+
+
       </div>
     </div>
   )
