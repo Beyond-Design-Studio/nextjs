@@ -29,7 +29,7 @@ function Box1() {
     },
   ];
   return (
-    <div className="-ml-16 w-full flex flex-wrap justify-evenly">
+    <div className="xl:-ml-16 w-full flex flex-wrap justify-evenly">
       {info.map((item, index) => {
         return (
           <div key={index} className="w-72 m-4">
@@ -159,8 +159,8 @@ function Deployment() {
 export default function DevTech() {
   return (
     <div className="w-full -mb-16">
-      <div className="ml-16 w-full mb-24">
-        <h1 className="w-11/12 text-6xl text-white text-productsans max-w-2xl font-bold border-b-4 border-solid border-accent-color pb-4 mb-32 pt-24">
+      <div className="mb-24 xl:ml-16 ml-4">
+        <h1 className="xl:w-6/12 w-10/12 xl:text-6xl text-5xl text-white text-productsans font-bold border-b-4 border-solid border-accent-color pb-4 mb-32 pt-24">
           Development and Tech
         </h1>
         <Box1 />
