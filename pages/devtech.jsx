@@ -167,13 +167,13 @@ export default function DevTech() {
       </div>
       <div className="w-full">
         <h1 className="text-white text-center text-4xl font-productsans font-bold">
-          Technologies we use
+          Products we build
         </h1>
         <p className="text-white w-6/12 text-xl text-center relative left-1/2 transform -translate-x-1/2 mt-12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          We believe that the first step to start reaching new customers or gaining visibility for your brand starts
+          with your website.  We offer <text className="text-red-500" > Jamstack sites </text> and we also build <text className="text-red-500" >
+            customized CMS </text> to ease your work in developing <text className="text-red-500" >E-commerce and Blogs </text>without going into code
+          We also develop <text className="text-red-500" >cross-platform apps </text> that run in both iOS and Android.
         </p>
       </div>
       <HeadlessCMS />
