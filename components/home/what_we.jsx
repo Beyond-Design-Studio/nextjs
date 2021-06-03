@@ -24,7 +24,7 @@ const WhatWeDo = ({ content }) => {
                 <div className={`${styles["white-line"]} bg-font-color h-2 w-52 mb-4 transform translate-x-44 md:translate-x-60 xl:translate-x-72`}></div>
               </div>
             </div>
-            <div className={`${styles["content"]} flex flex-col font-prompt gap-8 xl:gap-0 pl-0 xl:pl-24 text-font-color font-light text-base sm:text-2xl`}>
+            <div className={`${styles["content"]} flex flex-col font-prompt gap-8 xl:gap-0 pl-0 text-font-color font-light text-base sm:text-2xl`}>
               {content}
               {/* <div className={`self-center`}> */}
                 {/* <Link href="/">
