@@ -118,6 +118,13 @@ const Mem = ({img, name, desi, position, fall}) => {
       dir = "";
   }
 
+  var top = `top-${position.top}`
+  var left = `left-${position.left}`
+  var bottom = `bottom-${position.bottom}`
+  var right = `right-${position.right}`
+  var width = `w-${position.width}`
+  var height = `h-${position.height}`
+
   return (
     <div className="group flex flex-col w-full h-full">
       <div className={`h-4/5 bg-transparent relative`}>
@@ -126,7 +133,7 @@ const Mem = ({img, name, desi, position, fall}) => {
         <div
           className={`hidden xl:block
             transition-all ease-out duration-700 group-hover:${dir} group-hover:${dim}
-            absolute top-${position.top} left-${position.left} bottom-${position.bottom} right-${position.right} w-${position.width} h-${position.height}
+            absolute ${top} ${left} ${bottom} ${right} ${width} ${height}
             `}
           style={{
             background: "#EF0000",

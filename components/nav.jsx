@@ -42,7 +42,7 @@ const NavItem = ({name, number, type}) => {
   return (
     <>
       <li
-        className={`mb-2 md:mb-7 px-${type === 52 ? 16 : 12} md:px-${type} ${miscstyles.text}
+        className={`mb-2 md:mb-7 ${type === "px-52" ? "px-16" : "px-12"} md:${type} ${miscstyles.text}
               transform hover:scale-105 hover:translate-y-2 transition-all duration-500
             `}
       >{name}</li>
@@ -80,7 +80,7 @@ const Nav = ({ nav, toggleNav }) => {
             <NavItem 
               name={"Home"}
               number={"01"}
-              type={28}
+              type={"px-28"}
             />
           </a>
         </Link>
@@ -91,7 +91,7 @@ const Nav = ({ nav, toggleNav }) => {
             <NavItem
               name={"What we do"}
               number={"02"}
-              type={52}
+              type={"px-52"}
             />
           </a>
         </Link>
@@ -101,7 +101,7 @@ const Nav = ({ nav, toggleNav }) => {
             <NavItem
               name={"Work"}
               number={"03"}
-              type={52}
+              type={"px-52"}
             />
           </a>
         </Link>
@@ -111,7 +111,7 @@ const Nav = ({ nav, toggleNav }) => {
             <NavItem
               name={"Contact"}
               number={"04"}
-              type={28}
+              type={"px-28"}
             />
           </a>
         </Link>
