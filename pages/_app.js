@@ -8,24 +8,24 @@ import "../styles/override.css"
 
 
 function MyApp({ Component, pageProps }) {
-  const routers = useRouter();
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      const logEvent = (url) => {
-        analytics().setCurrentScreen(url);
-        analytics().logEvent('screen_view');
-      };
+  // const routers = useRouter();
+  // useEffect(() => {
+  //   if (process.env.NODE_ENV === 'production') {
+  //     const logEvent = (url) => {
+  //       analytics().setCurrentScreen(url);
+  //       analytics().logEvent('screen_view');
+  //     };
 
-      routers.events.on('routeChangeComplete', logEvent);
-      //For First Page
-      logEvent(window.location.pathname);
+  //     routers.events.on('routeChangeComplete', logEvent);
+  //     //For First Page
+  //     logEvent(window.location.pathname);
 
-      //Remvove Event Listener after un-mount
-      return () => {
-        routers.events.off('routeChangeComplete', logEvent);
-      };
-    }
-  }, [])
+  //     //Remvove Event Listener after un-mount
+  //     return () => {
+  //       routers.events.off('routeChangeComplete', logEvent);
+  //     };
+  //   }
+  // }, [])
   return (
     <div id="page" className="bg-bg-img bg-no-repeat bg-fixed">
 
