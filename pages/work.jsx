@@ -52,15 +52,15 @@ function WorkDis() {
             <div className="flex-1">
               <img className="object-fill z-10 relative rounded-3xl" src={item.image} />
             </div>
-            
+
             <div className={`flex-1 flex flex-col gap-24`}>
-              <div className={`w-10/12 flex flex-col items-start ${index % 2 !== 0 ? "lg:items-end" : "lg:items-start"} ` }>
-                <h1 className={`font-roboto text-white text-left ${index % 2 !== 0 ? "lg:text-right" : "lg:text-left" } justify-end font-medium text-5xl w-1/2` }>
+              <div className={`w-10/12 flex flex-col items-start ${index % 2 !== 0 ? "lg:items-end" : "lg:items-start"} `}>
+                <h1 className={`font-roboto text-white text-left ${index % 2 !== 0 ? "lg:text-right" : "lg:text-left"} justify-end font-medium text-5xl w-1/2`}>
                   {item.title}
                 </h1>
                 <div className="w-5/12 h-1 mt-2 border-b-8 border-solid border-accent-color"></div>
               </div>
-              <div style={{ backgroundColor: "#231D1D"}} className={`w-full lg:w-10/12 p-8 flex justify-start ${index % 2 !== 0 ? "lg:justify-end" : "lg:justify-start"}`}>
+              <div style={{ backgroundColor: "#231D1D" }} className={`w-full lg:w-10/12 p-8 flex justify-start ${index % 2 !== 0 ? "lg:justify-end" : "lg:justify-start"}`}>
                 <div className="w-full lg:w-9/12">
                   <div className="border-t-2 border-solid border-accent-color"></div>
                   <p className="text-accent-color text-lg font-bold pb-4">
@@ -72,7 +72,7 @@ function WorkDis() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         )
       })}
@@ -86,8 +86,9 @@ export default function Work() {
 
       <Head>
         <title>Our Work | Portfolio</title>
-        <meta name="description" content="We have worked with numerous industry clients over the course of time. Our work with an agro business made us use Shopify and we went on to score an AMC as well. This led us to working with a marketing and advertising firm where they wanted us to build a website for their brand. This brand had dynamic blogs, videos, photos, news, events which required us to build a dedicated control panel as well which was hosted on netlify, free of cost. We have also worked with budding entrepreneurs to make their dreams a reality and have much experience with building community products and social media platforms. " />
-      </Head>
+        <meta name="description"
+          content=
+          "We have worked with budding entrepreneurs to make their dreams a reality and have much experience with building community products and social media platforms. " />      </Head>
 
       <h1 className="w-full text-center text-white text-5xl lg:text-7xl font-prompt font-bold py-14 relative z-10">
         Our Work

@@ -38,11 +38,11 @@ function ServDis() {
             className="w-11/12 flex flex-col lg:flex-row flex-wrap items-center justify-between relative mb-24 gap-16"
           >
             <div className="flex-1">
-              
-                <h1 className="font-productsans text-white font-medium text-3xl sm:text-5xl">
-                  {item.title}
-                </h1>
-              
+
+              <h1 className="font-productsans text-white font-medium text-3xl sm:text-5xl">
+                {item.title}
+              </h1>
+
               <div className="">
                 <p className="text-base sm:text-lg font-light sm:font-normal text-white mt-6 w-full">
                   {item.description}
@@ -95,7 +95,9 @@ export default function Services() {
 
       <Head>
         <title>Our Services</title>
-        <meta name="description" content="We provide services like branding, brand strategy, business cards, flyers and posters, visual design, logo design, videos, advertisements, social media content, animations, product mockups, product design, interaction design, user research, UI critique, e-commerce website development, blog website development and app development using the latest technologies available with API  integrations, fast loading time. Our philosophy is to make sure your experience with our service post delivery is as easy and seamless as possible. We highly value user input their wishes and use react.js, node.js, wix, wordpress, elementor, netlify, firebase, next.js, vue,js, Shopify, webflow for maximum ease of access for the end user and the admin in the backend. " />
+        <meta name="description"
+          content=
+          "We provide services in branding, social media, product design, UI/UX as well as web and app dev using the latest tech" />
       </Head>
 
       <h1 className="text-white text-5xl sm:text-7xl font-prompt font-bold pt-24 mb-32">

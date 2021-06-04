@@ -18,10 +18,7 @@ const App = () => {
       {/* SEO */}
       <Head>
         <title>Beyond Design Studio</title>
-        <meta name="description" content="Design the future. Create with us now.
-Beyond Design Studio is a design and development startup taking up projects that impact the world. With our creative abilities to deliver the best results, our clients range from educational institutions to marketing firms to agro-businesses to community-based products. The design elements of our projects are in sync to ensure the conversation between the user and the product is smooth and memorable. We offer a range of services including app and web development, UI/UX design, visual and product design having a space for all design specialties - 3D, motion, graphic, User interface, user experience. 
-Beyond Design Studio aims to create designs that speak for themselves. We create, evaluate and recreate– we make no compromises to achieve that. Ultimately, our aim is to elevate brands by providing a unique footing for them in the digital world. We like to keep it simple, yet significant.
-" />
+        <meta name="description" content="We are a design and development studio that builds world products to help businesses make an impact. " />
       </Head>
 
       <ReactFullpage
