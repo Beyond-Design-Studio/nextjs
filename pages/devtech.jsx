@@ -171,9 +171,9 @@ export default function DevTech() {
         </h1>
         <p className="text-white w-6/12 text-xl text-center relative left-1/2 transform -translate-x-1/2 mt-12">
           We believe that the first step to start reaching new customers or gaining visibility for your brand starts
-          with your website.  We offer <text className="text-red-500" > Jamstack sites </text> and we also build <text className="text-red-500" >
-            customized CMS </text> to ease your work in developing <text className="text-red-500" >E-commerce and Blogs </text>without going into code
-          We also develop <text className="text-red-500" >cross-platform apps </text> that run in both iOS and Android.
+          with your website.  We offer <text className="text-accent-color" > Jamstack sites </text> and we also build <text className="text-accent-color" >
+            customized CMS </text> to ease your work in developing <text className="text-accent-color" >E-commerce and Blogs </text>without going into code
+          We also develop <text className="text-accent-color" >cross-platform apps </text> that run in both iOS and Android.
         </p>
       </div>
       <HeadlessCMS />
