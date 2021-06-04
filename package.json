@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
+    "firebase": "^8.6.4",
     "globby": "^11.0.3",
     "next": "10.2.3",
     "prettier": "^2.3.0",
